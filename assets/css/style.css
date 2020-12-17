@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Open Sans, Helvetica Neue, Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6,#mainNav, #mainNav .navbar-brand{
+    font-family: Open Sans, Helvetica Neue, Arial, sans-serif;;
+}
+.overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: black;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top:30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #fff;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height:450px) {
+    .overlay a{font-size:20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right:35px;
+    }
+}
+#mainNav {
+    border-color:transparent;
+    background-color: transparent;
+}
+
+@media (min-width:992px) {
+    header.masthead {
+      height: 100vh;
+      min-height: 650px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 56px);
+    background-position: 50%;
+    background-size: cover;
+}
+header{    
+    animation: animate 15s ease-in-out infinite;
+}
+
+@media (min-width:1200px) {
+    header.masthead h1 {
+        font-size: 4rem;
+    }
+}
+@media (min-width:992px) {
+    header.masthead h1 {
+        font-size: 3rem;
+    }
+}
+
+header.masthead h1{
+    font-size: 2.5rem;
+}
+
+
+@keyframes animate{
+    0%,100%{
+        background-image: url(../img/blue-back.png);
+    }
+    25%{
+        background-image: url(../img/pink-back.svg);
+    }
+    50%{
+        background-image: url(../img/blue-back.png);
+    }
+    75%{
+        background-image: url(../img/pink-back.svg);
+    }
+}
+.technologies-section{
+    margin-top:30px;
+}
+h2.mrg-b {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.hero {
+    width: 80%;
+    height: 450px;
+    position: relative;
+
+}
+.btn-box {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.btn-box button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ul.tablist-content {
+    list-style:none;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+ul.tablist-content li {
+    padding: 20px;
+}
