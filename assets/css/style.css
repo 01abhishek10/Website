@@ -4,7 +4,7 @@ body {
     font-family: Poppins, Open Sans, Helvetica Neue, Arial, sans-serif;
     color: #fff;
 }
-h1,h2,h3,h4,h5,h6,#mainNav, #mainNav .navbar-brand{
+h1,h2,h3,h4,h5,h6,#mainNav, #mainNav .navbar-brand,p{
     font-family: Poppins, Open Sans, Helvetica Neue, Arial, sans-serif;
     font-weight:  400;
 }
@@ -178,8 +178,17 @@ h2.mrg-b {
 }
 
 .our-services .box{
-    padding:5px;
+    padding-left:10px;
+    padding-right: 10px;
     border-radius: 10px;   
+}
+
+.our-services img.web-dev{
+    padding-bottom:30px;
+}
+
+.our-services img.chatbot {
+    padding-bottom: 40px;
 }
 .title {
     text-align: center;
@@ -190,5 +199,14 @@ h2.mrg-b {
 line-height: 30px;
 font-weight: 600;
 color: #252b33;
-margin-bottom: 16px;
+margin-bottom: 60px;
+}
+
+p.services-content{
+    padding-left: 10px;
+padding-right: 10px;
+text-align: center;
+padding-bottom: 30px;
+margin-top:10px;
+line-height: 35px;
 }
