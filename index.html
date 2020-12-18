@@ -57,16 +57,16 @@
             <div class="collapse navbar-collapse" data-aos="fade-down">
                 <ul class="navbar-nav d-x-flex justify content-center mx-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                       <a class="nav-link active" href="#">Home</a>
+                       <a class="mob-nav nav-link active" href="#">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link active" href="#">About Us</a>
+                        <a class="mob-nav nav-link active" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Contact</a>
+                        <a class="mob-nav nav-link active" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Blog</a>
+                        <a class="mob-nav nav-link active" href="#">Blog</a>
                     </li>
                 </ul>
                 <!--contact us button-->
@@ -80,10 +80,22 @@
             </div>
             <!--telegram icon on mobile display-->
             <button class="btn d-md-none" type="button" style="background:transparent;">
-                <i class="fab fa-telegram-plane" style="color: rgb(7,7,7);"></i>
+                <i class="fab fa-telegram-plane" onclick="openSubNav()" style="color: rgb(7,7,7);"></i>
             </button>
         </nav>
         
+        <!--sub navigation options on mobile menu-->
+        <!-- <section id="subNav">
+            <div class="container">
+            <div  class="vertical-menu fixed-bottom d-md-none">
+                <a href="#home" class="active">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>  
+              </div>
+            </div>
+        </section> -->
+        <!--sub navigation ends-->
+
         <header class="masthead text-center text-white d-flex">
             <div class="container my-auto mx-auto" data-aos="fade-down">
                 <div class="row">
@@ -181,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row second-list" data-aos="fade-down">
+                <div class="row second-list pt-3" data-aos="fade-down">
                     <div class="col-lg-4 px-4 mx-auto">
                         <div class="box" style="background-image: linear-gradient(rgb(244, 220, 204) 0%, rgb(244, 220, 204) 100%);">
                             <h3 class="title">Search Engine Optimization</h3>
@@ -211,17 +223,84 @@
         </section>
 
         <!--contact form-->
-        
+        <section class="contact">
+            <div class="container pt-5">
+                <div class="row px-3" >
+                    <div class="col-lg-6" data-aos="fade-down">
+                        <h2>Talk with Us</h2>
+                        <p class="pt-3">Discuss your plans with us</p>
+                        <form class="row">
+                            <div class="col-lg-10 pt-3 px-3 ">
+                              <input type="text" class="form-control" id="validationServer01" required placeholder="Name">
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-lg-10 pt-3 px-3 ">
+                                <input type="text" class="form-control" id="validationServer01" required placeholder="Contact">
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                              </div>
+                            <div class="col-lg-10 pt-3 px-3 mb-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-lg-4 pt-3">
+                              <button class="btn btn-outline-dark rounded-pill " type="submit" style="font-weight: 600;">SUBMIT</button>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="col-lg-6 pt-3" data-aos="fade-down">
+                        <div class="row">
+                            <div class="row pb-3">
+                                <div class="col-lg-6"><h2>Join With Us</h2></div>
+                                <div class="col-lg-6"><button type="button" class="btn btn-outline-dark rounded-pill" style="font-weight: 600;">APPLY NOW</button></div>
+                            </div>
+                            <div class="row explore-more pt-2">
+                                <div class="col-lg-8"><h2>Explore more</h2></div>
+                                <div class="col-lg-8">
+                                    <ul class="footer-links">
+                                        <li class="footer-item py-2">
+                                            <a class="footer-link">Home</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a class="footer-link">About Us</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a class="footer-link">Contact</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a class="footer-link">Blog</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row social-media">
+                                <h2>Follow us</h2>
+                                <div class="row py-3">
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#" ><i class="fab fa-facebook-f" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-instagram" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-whatsapp" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-github" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-behance" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-linkedin-in" style="color: rgb(7,7,7);"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--contact form ends-->
 
         <!--footer starts-->
         <section id="footer">
             <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-
-                        </div>
+                <div class="container" data-aos="fade-down">
+                    <div class="row shadow p-3 mb-5 bg-white rounded">
+                            <p class="cp-text text-center">
+                                © Copyright 2020 UpDot. All rights reserved.
+                            </p>
                     </div>
                 </div>
             </footer>
@@ -234,7 +313,12 @@
                 if (scroll > 300) {
                     $("#mainNav").css("background" , "#37474F");
                     $(".navbar-brand").css("color", "white");
+                    if (screen.width >= 992) {
                     $(".nav-link").css("color", "white");
+                    }
+                    if (screen.width < 992) {
+                    $(".nav-link").css("color", "black");
+                    }
                 }
 
                 else{
