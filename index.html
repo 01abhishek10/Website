@@ -3,7 +3,7 @@
     <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>NSU</title>
+        <title>Navbar</title>
         <meta name='description' content="Koders.co">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -84,7 +84,7 @@
         </nav>
         
         <header class="masthead text-center text-white d-flex">
-            <div class="container my-auto" data-aos="fade-down">
+            <div class="container my-auto mx-auto" data-aos="fade-down">
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
                         <h1 class="text-uppercase animate__animated animate__pulse ">Website Development Services</h1>
@@ -92,7 +92,10 @@
                     </div>
                 </div>
                 <div class="col-lg-8 mx-auto">
-                    <p class="text-faded mb-5">We can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#services">Find Out More</a>
+                    <p class="text-faded mb-5">We can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+                    <button class="btn btn-primary text-white rounded-pill mx-auto" type="button">
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#services">Contact Us</a>
+                    </button>
                 </div>
             </div>
         </header>
@@ -150,12 +153,12 @@
         <!--our services start-->
         <section class="our-services">
             <div class="container">
-                <div class="row mx-auto" style="text-align: center; padding-bottom: 25px;"><h1> Our core services </h1></div>
+                <div class="row mx-auto" style="text-align: center; padding-bottom: 25px;"><h1 class="cd-hire"> Our core services </h1></div>
                 <div class="row" data-aos="fade-down">
                     <div class="col-lg-4 px-4 mx-auto">
                         <div class="box" style="background-image: linear-gradient(rgb(186, 228, 244) 0%, rgb(186, 228, 244) 100%)">
                             <h3 class="title">Web Development</h3>
-                            <img class="web-dev" src="assets/img/hire-dedicated-developer.svg">
+                            <div class="img-box"><img class="web-dev" src="assets/img/hire-dedicated-developer.svg" style="width: 299px; height: 212px;"></div>
                             <p class="services-content">Create your own team of developers for your software development project on short term,
                                 long term or permanent basis with guaranteed project delivery at affordable prices.</p>
                         </div>
@@ -163,7 +166,7 @@
                     <div class="col-lg-4 px-4">
                         <div class="box" style="background-image: linear-gradient(rgb(230, 221, 244) 0%, rgb(230, 221, 244) 100%);">
                             <h3 class="title">Chatbot Development</h3>
-                            <img class="chatbot" src="assets/img/chatbot-1.svg" style="width:299px; height:212px;">
+                            <div class="img-box"><img class="chatbot" src="assets/img/chatbot-1.svg" style="width:299px; height:212px;"></div>
                             <p class="services-content">Create your own team of developers for your software development project on short term,
                                 long term or permanent basis with guaranteed project delivery at affordable prices.</p>
                         </div>
@@ -171,17 +174,17 @@
                     <div class="col-lg-4 px-4">
                         <div class="box" style="background-image: linear-gradient(rgb(209, 211, 246) 0%, rgb(209, 211, 246) 100%);">
                             <h3 class="title">App Development</h3>
-                            <img src="assets/img/services-mobile-apps.svg" style="width:299px; height: 212px;">
+                            <div class="img-box"><img src="assets/img/services-mobile-apps.svg" style="width:299px; height: 212px;"></div>
                             <p class="services-content">Create your own team of developers for your software development project on short term,
                                 long term or permanent basis with guaranteed project delivery at affordable prices.</p>
                         </div>
                     </div>
                 </div>
-                <div class="row" data-aos="fade-down">
+                <div class="row second-list" data-aos="fade-down">
                     <div class="col-lg-4 px-4 mx-auto">
                         <div class="box" style="background-image: linear-gradient(rgb(244, 220, 204) 0%, rgb(244, 220, 204) 100%);">
                             <h3 class="title">Search Engine Optimization</h3>
-                            <img src="assets/img/seo-des.svg" style="width: 295px; height: 182px;">
+                            <div class="img-box"><img src="assets/img/seo-des.svg" style="width: 285px; height: 212px;"></div>
                             <p class="services-content">Create your own team of developers for your software development project on short term,
                                 long term or permanent basis with guaranteed project delivery at affordable prices.</p>
                         </div>
@@ -189,7 +192,7 @@
                     <div class="col-lg-4 px-4">
                         <div class="box" style="background-image: linear-gradient(rgb(246, 214, 214) 0%, rgb(246, 214, 214) 100%);">
                             <h3 class="title">Logo Designing</h3>
-                            <img src="assets/img/brand.svg" style="width: 370px; height: 182px;">
+                            <div class="img-box"><img src="assets/img/brand.svg" style="width: 370px; height: 212px;"></div>
                             <p class="services-content">Create your own team of developers for your software development project on short term,
                                 long term or permanent basis with guaranteed project delivery at affordable prices.</p>
                         </div>
@@ -197,7 +200,7 @@
                     <div class="col-lg-4 px-4">
                         <div class="box" style="background-image: linear-gradient(rgb(186, 228, 244) 0%, rgb(186, 228, 244) 100%);">
                             <h3 class="title">Digital Marketing</h3>
-                            <img src="assets/img/digmark.svg" style="width: 370px; height: 182px;">
+                            <div class="img-box"><img src="assets/img/digmark.svg" style="width: 370px; height: 212px;"></div>
                             <p class="services-content">Create your own team of developers for your software development project on short term,
                                 long term or permanent basis with guaranteed project delivery at affordable prices.</p>
                         </div>
@@ -207,56 +210,28 @@
         </section>
 
         <!--contact form-->
-        <div class="bg-contact100" style="background-image: url('images/bg-01.jpg');">
-            <div class="container-contact100">
-                <div class="wrap-contact100">
-                    <div class="contact100-pic js-tilt" data-tilt>
-                        <img src="assets/img/img-01.png" alt="IMG">
-                    </div>
-    
-                    <form class="contact100-form validate-form">
-                        <span class="contact100-form-title">
-                            Get in touch
-                        </span>
-    
-                        <div class="wrap-input100 validate-input" data-validate = "Name is required">
-                            <input class="input100" type="text" name="name" placeholder="Name">
-                            <span class="focus-input100"></span>
-                            <span class="symbol-input100">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                            </span>
-                        </div>
-    
-                        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                            <input class="input100" type="text" name="phone" placeholder="Contact">
-                            <span class="focus-input100"></span>
-                            <span class="symbol-input100">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </span>
-                        </div>
-    
-                        <div class="wrap-input100 validate-input" data-validate = "Message is required">
-                            <textarea class="input100" name="message" placeholder="Message"></textarea>
-                            <span class="focus-input100"></span>
-                        </div>
-    
-                        <div class="container-contact100-form-btn">
-                            <button class="contact100-form-btn">
-                                Send
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        
         <!--contact form ends-->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <!--footer starts-->
+        <section id="footer">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <!--footer ends-->
         <script>
             $(document).ready(function(){
             $(window).scroll(function(){
                 var scroll = $(window).scrollTop();
                 if (scroll > 300) {
-                    $("#mainNav").css("background" , "grey");
+                    $("#mainNav").css("background" , "#37474F");
                     $(".navbar-brand").css("color", "white");
                     $(".nav-link").css("color", "white");
                 }
@@ -268,9 +243,6 @@
                 }
             })
             })
-            $(function() {
-                $('.nav-tabs').responsiveTabs();
-            });
             AOS.init();
         </script>
     </body>
