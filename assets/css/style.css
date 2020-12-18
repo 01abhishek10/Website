@@ -4,12 +4,9 @@ body {
     font-family: Poppins, Open Sans, Helvetica Neue, Arial, sans-serif;
     color: #fff;
 }
-h1,h2,h3,h4,h5,h6,#mainNav, #mainNav .navbar-brand{
+h1,h2,h3,h4,h5,h6,#mainNav, #mainNav .navbar-brand,p,.masthead button a,span{
     font-family: Poppins, Open Sans, Helvetica Neue, Arial, sans-serif;
     font-weight:  400;
-}
-.navbar-brand {
-    padding-left: 50px;
 }
 .overlay {
     height: 100%;
@@ -61,34 +58,28 @@ h1,h2,h3,h4,h5,h6,#mainNav, #mainNav .navbar-brand{
     border-color:transparent;
     background-color: transparent;
 }
-
+.nav-item a{
+    font-size: 16px;
+}
 h1 {
 letter-spacing: -1px;
 }
 
-@media (min-width:992px) {
-    header.masthead {
-      height: 100vh;
-      min-height: 650px;
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-    ul.navbar-nav li{
-        padding: 15px;
-    }
-  }
-
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 56px);
-    background-position: 50%;
+    background-position: 100%;
     background-size: cover;
 }
 header{    
     animation: animate 15s ease-in-out infinite;
-    overflow-x: hidden;
 }
-
+.text-center {
+    text-align: center;
+}
+header.masthead .container{
+    padding-top: 30px;
+}
 @media screen and (min-width:1200px) {
     header.masthead h1 {
         font-size: 4rem;
@@ -102,14 +93,18 @@ header{
         font-weight: 800;
         line-height: 55px;
     }
+    .navbar-brand {
+        padding-left: 50px;
+    }
 }
 @media screen and (min-width:992px) {
     header.masthead h1 {
-        font-size: 60px;
+        font-size: 58px;
     font-weight: 800;
     line-height: 70px;
     letter-spacing: -1px;
     }
+    
     .cd-headline {
         font-size: 4rem;
     }
@@ -122,6 +117,18 @@ header{
     p{
         font-size: 20px;
     }
+    header.masthead {
+        height: 100vh;
+        min-height: 650px;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      ul.navbar-nav li{
+          padding: 15px;
+      }
+      .navbar-brand {
+          padding-left: 50px;
+      }
 }
 
 .cd-headline {
@@ -135,13 +142,13 @@ header{
         background-image: url(../img/blue-back.png);
     }
     25%{
-        background-image: url(../img/pink-back.svg);
+        background-image: url(../img/pink-back.jpeg);
     }
     50%{
         background-image: url(../img/purple-back.png);
     }
     75%{
-        background-image: url(../img/brown-back.jpeg);
+        background-image: url(../img/black-white.png);
     }
 }
 .technologies-section{
@@ -178,8 +185,16 @@ h2.mrg-b {
 }
 
 .our-services .box{
-    padding:5px;
+    padding-left:10px;
+    padding-right: 10px;
     border-radius: 10px;   
+}
+
+.our-services div.img-box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 .title {
     text-align: center;
@@ -190,5 +205,17 @@ h2.mrg-b {
 line-height: 30px;
 font-weight: 600;
 color: #252b33;
-margin-bottom: 16px;
+margin-bottom: 60px;
+}
+
+p.services-content{
+    padding-left: 10px;
+padding-right: 10px;
+text-align: center;
+padding-bottom: 30px;
+margin-top:10px;
+font-size: 16px;
+line-height: 28px;
+font-weight: 600;
+color: #252b33;
 }
