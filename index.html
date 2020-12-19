@@ -34,9 +34,13 @@
             <div id="myNav" class="overlay">
                 <!--button to close navigation overlay-->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!--nightmode toggle icon in mobile-->
+                <button class="btn text-right text-white" type="button" style="margin-right: 5px;">
+                    <i onclick="myFunction(this)" class="fas fa-moon" style="text-align: center; color:black;"></i>
+                </button>
                 <!--overlay content start-->
-                <div class="overlay-content" id="navbarToggler">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <div class="overlay-content d-flex justify-content-start" style="padding-left:15px;" id="navbarToggler">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="mob-nav nav-link active" href="index.html">Home</a>
                     </li>
@@ -54,8 +58,8 @@
             </div>
 
             <!--normal navbar for large and extra large devices-->
-            <div class="collapse navbar-collapse" data-aos="fade-down">
-                <ul class="navbar-nav d-x-flex justify content-center mx-auto mt-2 mt-lg-0">
+            <div class="collapse navbar-collapse d-x-flex justify-content-end" data-aos="fade-down">
+                <ul class="navbar-nav mt-2 mt-lg-0">
                     <li class="nav-item">
                        <a class="nav-link active" href="index.html">Home</a>
                      </li>
@@ -71,10 +75,10 @@
                 </ul>
                 <!--contact us button-->
                 <button class="btn btn-primary text-white d-none d-lg-block rounded-pill" type="button">
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="contact.html">Contact Us</a>
+                    <a class="btn btn-primary js-scroll-trigger" role="button" href="contact.html">Contact Us</a>
                 </button>
                 <!--nightmode icon-->
-                <button class="btn text-right text-white d-none d-lg-block" type="button" style="color: white; margin-left:15px; margin-right: 25px;">
+                <button class="btn text-right text-white d-none d-lg-block" type="button" style="margin-right: 5px;">
                     <i onclick="myFunction(this)" class="fas fa-moon" style="text-align: center; color:black; font-size: large;"></i>
                 </button>
             </div>
@@ -95,7 +99,7 @@
                 <div class="col-lg-8 mx-auto">
                     <p class="text-faded mb-5">We can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
                     <button class="btn btn-primary text-white rounded-pill mx-auto" type="button">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#services">Contact Us</a>
+                        <a class="btn btn-primary js-scroll-trigger" role="button" href="#services">Contact Us</a>
                     </button>
                 </div>
             </div>
@@ -282,6 +286,35 @@
                 </div>
             </div>
         </section>
+        <!--services end-->
+
+        <!--values start-->
+        <section class="values">
+            <div class="container my-5 px-5 shadow p-3 mb-5 bg-white rounded-3 start">
+                <div class="d-flex align-items-center">
+                    <div class="nav flex-column nav-pills mx-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <a class="nav-link active mt-5" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><h1>Discover</h1></a>
+                      <a class="nav-link mt-3" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><h1>Design</h1></a>
+                      <a class="nav-link mt-3" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><h1>Develop</h1></a>
+                      <a class="nav-link mt-3" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><h1>Launch</h1></a>
+                    </div>
+                    <div class="tab-content shadow p-3 mb-5 bg-white rounded-end" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active ps-3" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <h2>01</h2>
+                            <h2>CORE VALUES</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Unde fugiat ipsa provident dolorem animi ratione.
+                                 Mollitia veritatis eum libero! Sit, consequatur perspiciatis 
+                                 fugit labore tempore autem! Adipisci numquam deleniti optio.</p>
+                        </div>
+                      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">World</div>
+                      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Hi   </div>
+                      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Here</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--values end-->
 
         <!--newsletter subscription start-->
         <section class="news">
@@ -383,8 +416,8 @@
         <!--footer starts-->
         <section id="footer">
             <footer>
-                <div class="container" data-aos="fade-down">
-                    <div class="row shadow p-3 mb-5 bg-white rounded">
+                <div class="container">
+                    <div class="row">
                             <p class="cp-text text-center">
                                 © Copyright 2020 UpDot. All rights reserved.
                             </p>
