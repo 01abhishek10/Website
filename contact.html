@@ -34,9 +34,13 @@
             <div id="myNav" class="overlay">
                 <!--button to close navigation overlay-->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!--nightmode toggle icon in mobile-->
+                <button class="btn text-right text-white" type="button" style="margin-right: 5px;">
+                    <i onclick="myFunction(this)" class="fas fa-moon" style="text-align: center; color:black;"></i>
+                </button>
                 <!--overlay content start-->
-                <div class="overlay-content" id="navbarToggler">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <div class="overlay-content d-flex justify-content-start" style="padding-left:15px;" id="navbarToggler">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="mob-nav nav-link active" href="index.html">Home</a>
                     </li>
@@ -83,23 +87,84 @@
                 <i class="fab fa-telegram-plane" onclick="openSubNav()" style="color: rgb(7,7,7);"></i>
             </button>
         </nav>
-        
-        <!-- <header class="masthead text-center text-white d-flex" style="width: 100%;">
-            <div class="container my-auto mx-auto" data-aos="fade-down">
+
+        <!--small intro start-->
+        <section class="intro">
+            <div class="container my-5">
                 <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <h1 class="text-uppercase animate__animated animate__pulse ">Website Development Services</h1>
-                        <hr />
+                    <div class="col-lg-6">
+                        <h1 class="text-left pt-5 mb-3 big-hire" style="margin-top:5rem;">Contact Us</h1>
+                        <span class="strong"><strong>Let's create something awesome together</strong></span>
+                    </div>
+                    <div class="col-lg-6 mt-5 pt-5">
+                        <p class="mt-5">Contact us today if you have questions about UpDot.
+                            Our customer care executive will respond as soon as possible with answers to your
+                            questions.</p>
                     </div>
                 </div>
-                <div class="col-lg-8 mx-auto">
-                    <p class="text-faded mb-5">We can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-                    <button class="btn btn-primary text-white rounded-pill mx-auto" type="button">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#services">Contact Us</a>
-                    </button>
+            </div>
+        </section>
+        <!--small intro end-->
+
+        <!--contact form-->
+        <section class="contact">
+            <div class="container pt-5">
+                <div class="row px-3">
+                    <div class="col-lg-6" data-aos="fade-down">
+                        <h2>Talk with Us</h2>
+                        <p class="pt-3">Discuss your plans with us</p>
+                        <form action="#" class="row">
+                            <div class="col-lg-10 pt-3 px-3 ">
+                              <input type="text" class="form-control form-control-lg" id="validationServer01" required placeholder="Name">
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-lg-3 pt-3 px-3">
+                                <select id="inputState" class="form-select form-control-lg">
+                                <option selected>Code *</option>
+                                <option>+91</option>
+                                <option>+1</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-7 pt-3 px-3 ">
+                                <input type="text" class="form-control form-control-lg" id="validationServer01" required placeholder="Contact">
+                                <div class="valid-feedback">
+                                Looks good!
+                                </div>
+                            </div>
+                            <div class="col-lg-10 pt-3 px-3 mb-3">
+                                <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-lg-4 py-3">
+                              <button class="btn btn-outline-dark rounded-pill " type="submit" style="font-weight: 600;">SUBMIT</button>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="col-lg-6 pt-3" data-aos="fade-down">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.9974145158!2d77.35073152304378!3d12.953847712013593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1608404928594!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
                 </div>
             </div>
-        </header> -->
+        </section>
+        <!--newsletter subscription start-->
+        <section class="news">
+            <div class="container">
+                <div class="row" data-aos="fade-down">
+                    <h1 class="cd-hire mt-5 animate__animated animate__pulse">Subscribe to our newsletter</h1>
+                    <form action="#">
+                    <div class="col-lg-6 mt-3 mb-5">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="col-lg-6 mt-3 mb-5">
+                        <button type="submit" class="btn btn-outline-dark rounded-pill">Subscribe Now!</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </section>
+        <!--newsletter subscription ends-->
 
         <!--footer starts-->
         <section id="footer">
