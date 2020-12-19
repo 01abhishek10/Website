@@ -8,6 +8,7 @@ h1,h2,h3,h4,h5,h6,#mainNav, #mainNav .navbar-brand,p,.masthead button a,span{
     font-family: Poppins, Open Sans, Helvetica Neue, Arial, sans-serif;
     font-weight:  400;
 }
+
 .overlay {
     height: 100%;
     width: 0%;
@@ -218,4 +219,17 @@ font-size: 16px;
 line-height: 28px;
 font-weight: 600;
 color: #252b33;
+}
+
+.tech-work .nav-link {
+    color:black !important;
+}
+
+.tech-work ul,.tech-work ul li {
+    font-family: Poppins, Open Sans, Helvetica Neue, Arial, sans-serif;
+    font-weight: 600;
+}
+
+.tab-content .row{
+    text-align: center;
 }
