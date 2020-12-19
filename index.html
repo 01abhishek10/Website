@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"/>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/util.css">
@@ -37,16 +38,16 @@
                 <div class="overlay-content" id="navbarToggler">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="mob-nav nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mob-menu">
+                        <a class="mob-nav nav-link active" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">About Us</a>
+                        <a class="mob-nav nav-link active" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Blog</a>
+                        <a class="mob-nav nav-link active" href="#">Blog</a>
                     </li>
                     </ul>
                 </div>
@@ -79,7 +80,7 @@
             </div>
             <!--telegram icon on mobile display-->
             <button class="btn d-md-none" type="button" style="background:transparent;">
-                <i class="fab fa-telegram-plane" style="color: rgb(7,7,7);"></i>
+                <i class="fab fa-telegram-plane" onclick="openSubNav()" style="color: rgb(7,7,7);"></i>
             </button>
         </nav>
         
@@ -103,14 +104,14 @@
         <!--homepage animation start-->
         <div class="container" data-aos="fade-down">
             <div class="row">
-                <div class="mt-3 col-lg-12"><h1 class="cd-headline" style="text-align: center;">We Develop</h1></div>
+                <div class="mt-3 mb-3 col-lg-12 animate__animated animate__pulse"><h1 class="cd-headline" style="text-align: center;">We Develop</h1></div>
                 <div class="col-lg-12 mx-auto" style="text-align: center;">
                     <span
                         class="txt-rotate cd-headline"
                         data-period="2000"
                         data-rotate='[ "Amazing Websites !", "Beautiful Applications !", "Chatbots !",  "Digital Strategies" ]'></span>
                 </div>
-                <div class="col-lg-8 mx-auto" style="text-align: center;">
+                <div class="col-lg-8 mx-auto" style="text-align: center;" data-aos="fade-down">
                     <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Nobis natus obcaecati repellendus earum distinctio. Obcaecati
                     reiciendis impedit praesentium ratione cum voluptatem architecto, 
@@ -126,7 +127,7 @@
         <section class="tech-work">
             <div class="container">
                 <div class="row">
-                    <div class="mt-5 pb-5 col-lg-12"><h1 class="cd-hire" style="text-align: center;">Technologies we work with</h1></div>
+                    <div class="mt-5 pb-5 col-lg-12 animate__animated animate__pulse"><h1 class="cd-hire" style="text-align: center;">Technologies we work with</h1></div>
                 </div>
                 <div class="container pb-5"> 
                         <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
@@ -149,7 +150,7 @@
                     <div class="tab-content pt-3" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="row p-5">
-                                <div class="col"><a href="#"><img src="assets/img/react.png" style="width: 50px; height: 50px;"></a></div>
+                                <div class="col"><a href="#"><img src="assets/img/react.png" style="width: 50px; height: 50px; background: white;"></a></div>
                                 <div class="col"><a href="#"><img src="assets/img/angular.png" style="width: 50px; height: 50px;"></a></div>
                                 <div class="col"><a href="#"><img src="assets/img/html5.png" style="width: 50px; height: 50px;"></a></div>
                                 <div class="col"><a href="#"><img src="assets/img/css.png" style="width: 50px; height: 50px;"></a></div>
@@ -216,8 +217,8 @@
         <section class="accomplishments">
             <div class="container" style="padding-bottom: 20px;" data-aos="fade-down">
                 <div class="row">
-                    <div class="col-lg-12"><h1 class="cd-hire" style="text-align: center;">Accomplishments marked globally</h1><p class="mt-3" style="text-align: center;">states we have worked in</p></div>
-                    <div class="col-lg-10 mx-auto" style="text-align: center;"><img src="assets/img/workindia.gif" style="width: 90%;"></div>
+                    <div class="col-lg-12 animate__animated animate__pulse" data-aos="fade-down"><h1 class="cd-hire" style="text-align: center;">Accomplishments marked globally</h1><p class="mt-3" style="text-align: center;">states we have worked in</p></div>
+                    <div class="col-lg-10 mx-auto" data-aos="fade-down" style="text-align: center;"><img src="assets/img/workindia1.gif" style="width: 90%;"></div>
                 </div>
             </div>
         </section>
@@ -226,7 +227,7 @@
         <!--our services start-->
         <section class="our-services">
             <div class="container">
-                <div class="row mx-auto" style="text-align: center; padding-bottom: 25px;"><h1 class="cd-hire"> Our core services </h1></div>
+                <div class="row mb-3 mx-auto animate__animated animate__pulse" style="text-align: center; padding-bottom: 25px;"><h1 class="cd-hire"> Our core services </h1></div>
                 <div class="row" data-aos="fade-down">
                     <div class="col-lg-4 px-4 mx-auto">
                         <div class="box" style="background-image: linear-gradient(rgb(186, 228, 244) 0%, rgb(186, 228, 244) 100%)">
@@ -253,7 +254,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row second-list" data-aos="fade-down">
+                <div class="row second-list pt-3" data-aos="fade-down">
                     <div class="col-lg-4 px-4 mx-auto">
                         <div class="box" style="background-image: linear-gradient(rgb(244, 220, 204) 0%, rgb(244, 220, 204) 100%);">
                             <h3 class="title">Search Engine Optimization</h3>
@@ -282,18 +283,111 @@
             </div>
         </section>
 
+        <!--newsletter subscription start-->
+        <section class="news">
+            <div class="container">
+                <div class="row" data-aos="fade-down">
+                    <h1 class="cd-hire mt-5 animate__animated animate__pulse">Subscribe to our newsletter</h1>
+                    <form action="#">
+                    <div class="col-lg-6 mt-3 mb-5">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="col-lg-6 mt-3 mb-5">
+                        <button type="submit" class="btn btn-outline-dark rounded-pill">Subscribe Now!</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </section>
+        <!--newsletter subscription ends-->
+
         <!--contact form-->
-        
+        <section class="contact">
+            <div class="container pt-5">
+                <div class="row px-3">
+                    <div class="col-lg-6" data-aos="fade-down">
+                        <h2>Talk with Us</h2>
+                        <p class="pt-3">Discuss your plans with us</p>
+                        <form action="#" class="row">
+                            <div class="col-lg-10 pt-3 px-3 ">
+                              <input type="text" class="form-control form-control-lg" id="validationServer01" required placeholder="Name">
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-lg-3 pt-3 px-3">
+                                <select id="inputState" class="form-select form-control-lg">
+                                <option selected>Code *</option>
+                                <option>+91</option>
+                                <option>+1</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-7 pt-3 px-3 ">
+                                <input type="text" class="form-control form-control-lg" id="validationServer01" required placeholder="Contact">
+                                <div class="valid-feedback">
+                                Looks good!
+                                </div>
+                            </div>
+                            <div class="col-lg-10 pt-3 px-3 mb-3">
+                                <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-lg-4 py-3">
+                              <button class="btn btn-outline-dark rounded-pill " type="submit" style="font-weight: 600;">SUBMIT</button>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="col-lg-6 pt-3" data-aos="fade-down">
+                        <div class="row">
+                            <div class="row pb-3">
+                                <div class="col-lg-6"><h2>Join With Us</h2></div>
+                                <div class="col-lg-6"><button type="button" class="btn btn-outline-dark rounded-pill" style="font-weight: 600;">APPLY NOW</button></div>
+                            </div>
+                            <div class="row explore-more pt-2">
+                                <div class="col-lg-8"><h2>Explore more</h2></div>
+                                <div class="col-lg-8">
+                                    <ul class="footer-links">
+                                        <li class="footer-item py-2">
+                                            <a class="footer-link">Home</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a class="footer-link">About Us</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a class="footer-link">Contact</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a class="footer-link">Blog</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row social-media">
+                                <h2>Follow us</h2>
+                                <div class="row py-3">
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#" ><i class="fab fa-facebook-f" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-instagram" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-whatsapp" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-github" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-behance" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-linkedin-in" style="color: rgb(7,7,7);"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--contact form ends-->
 
         <!--footer starts-->
         <section id="footer">
             <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-
-                        </div>
+                <div class="container" data-aos="fade-down">
+                    <div class="row shadow p-3 mb-5 bg-white rounded">
+                            <p class="cp-text text-center">
+                                © Copyright 2020 UpDot. All rights reserved.
+                            </p>
                     </div>
                 </div>
             </footer>
@@ -306,7 +400,12 @@
                 if (scroll > 300) {
                     $("#mainNav").css("background" , "#37474F");
                     $(".navbar-brand").css("color", "white");
+                    if (screen.width >= 992) {
                     $(".nav-link").css("color", "white");
+                    }
+                    if (screen.width < 992) {
+                    $(".nav-link").css("color", "black");
+                    }
                 }
 
                 else{

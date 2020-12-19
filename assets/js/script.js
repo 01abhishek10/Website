@@ -6,8 +6,18 @@ function closeNav() {
   document.getElementById("myNav").style.width="0%";
 }
 
+function openSubNav() {
+  document.getElementById("subNav").style.display="block";
+}
+
+function closeSubNav() {
+  document.getElementById("subNav").style.display="none";
+}
+
 function myFunction(x) {
   x.classList.toggle("fa-sun");
+  var ele = document.body;
+  ele.classList.toggle('dark-mode');
 }
 
 // text typing effect
