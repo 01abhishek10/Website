@@ -81,9 +81,6 @@ header.masthead {
 header{    
     animation: animate 15s ease-in-out infinite;
 }
-.text-center {
-    text-align: center;
-}
 header.masthead .container{
     padding-top: 30px;
 }
@@ -102,6 +99,12 @@ header.masthead .container{
     }
     .navbar-brand {
         padding-left: 50px;
+    }
+    .big-hire {
+        font-size:80px;
+    }
+    .about-us strong{
+        font-size:30px;
     }
 }
 @media screen and (min-width:992px) {
@@ -193,10 +196,6 @@ h2.mrg-b {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
-}
-
-.our-services .container {
-    display: grid;
 }
 
 .our-services .box{
