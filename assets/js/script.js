@@ -44,6 +44,7 @@ function myFunction(x) {
     document.getElementById('firebase').src="assets/img/w-firebase.png";
   }
   if (x.classList[2] == null){
+    document.getElementById('main-a-Nav').style.color='black';
     document.getElementById('full-head').style.animation='animate 15s ease-in-out infinite';
     document.getElementById('react').src="assets/img/react.png";
     document.getElementById('angular').src="assets/img/angular.png";

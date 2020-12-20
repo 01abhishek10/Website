@@ -291,7 +291,7 @@
 
         <!--values start-->
         <section class="values">
-            <div class="container my-5 px-5 start">
+            <div class="container my-5 start">
                 <div class="d-flex align-items-end">
                     <div class="nav flex-column nav-pills mx-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                       <a class="nav-link active mt-5" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><h1>Discover</h1></a>
@@ -358,26 +358,38 @@
                         <p class="pt-3">Discuss your plans with us</p>
                         <form action="#" class="row">
                             <div class="col-lg-10 pt-3 px-3 ">
-                              <input type="text" class="form-control form-control-lg" id="validationServer01" required placeholder="Name">
+                              <input type="text" class="form-control" id="validationServer01" required placeholder="Name">
                               <div class="valid-feedback">
                                 Looks good!
                               </div>
                             </div>
-                            <div class="col-lg-3 pt-3 px-3">
-                                <select id="inputState" class="form-select form-control-lg">
-                                <option selected>Code *</option>
-                                <option>+91</option>
-                                <option>+1</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-7 pt-3 px-3 ">
-                                <input type="text" class="form-control form-control-lg" id="validationServer01" required placeholder="Contact">
+                            <div class="col-lg-10 pt-3 px-3 ">
+                                <input type="email" class="form-control" id="validationServer01" required placeholder="Email">
                                 <div class="valid-feedback">
-                                Looks good!
+                                  Looks good!
+                                </div>
+                              </div>
+                            <div class="col-lg-10 pt-3 px-3">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <select id="inputState" class="form-select">
+                                        <option selected>Code *</option>
+                                        <option>+91</option>
+                                        <option>+1</option>
+                                        <option>+971</option>
+                                        <option>+44</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" id="validationServer01" required placeholder="Contact">
+                                        <div class="valid-feedback">
+                                        Looks good!
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-10 pt-3 px-3 mb-3">
-                                <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
                             </div>
                             <div class="col-lg-4 py-3">
                               <button class="btn btn-outline-dark rounded-pill " type="submit" style="font-weight: 600;">SUBMIT</button>
@@ -395,16 +407,22 @@
                                 <div class="col-lg-8">
                                     <ul class="footer-links">
                                         <li class="footer-item py-2">
-                                            <a class="footer-link" href="index.html">Home</a>
-                                        </li>
-                                        <li class="footer-item py-2">
                                             <a class="footer-link" href="about.html">About Us</a>
                                         </li>
                                         <li class="footer-item py-2">
-                                            <a class="footer-link" href="contact.html">Contact</a>
+                                            <a class="footer-link" href="about.html">Careers</a>
                                         </li>
                                         <li class="footer-item py-2">
                                             <a class="footer-link" href="blog.html">Blog</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a class="footer-link" href="blog.html">Privacy Policy</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a class="footer-link" href="blog.html">Terms and Conditions</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a class="footer-link" href="blog.html">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -447,7 +465,7 @@
                 var ele = document.getElementById('dark-mode-button').classList;
                 console.log(ele);
                 if (scroll > 300) {
-                    $("#mainNav").css("background" , "#37474F");
+                    $("#mainNav").css("background" , "black");
                     $(".navbar-brand").css("color", "white");
                     if (screen.width >= 992) {
                     $(".nav-link").css("color", "white");

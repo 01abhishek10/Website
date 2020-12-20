@@ -4,7 +4,7 @@ body {
     font-family: Poppins, Open Sans, Helvetica Neue, Arial, sans-serif;
     color: #fff;
 }
-h1,h2,h3,h4,h5,h6,#mainNav, #mainNav .navbar-brand,p,.masthead button a,span,form,a.footer-link{
+h1,h2,h3,h4,h5,h6,#mainNav, #contactmainNav, #blogmainNav, #mainNav .navbar-brand,p,.masthead button a,span,form,a.footer-link{
     font-family: Poppins, Open Sans, Helvetica Neue, Arial, sans-serif;
     font-weight:  400;
 }
@@ -72,6 +72,14 @@ a.mob-nav{
     border-color:transparent;
     background-color: transparent;
 }
+#contactmainNav {
+    border-color:transparent;
+    background: white;
+}
+#blogmainNav {
+    border-color:transparent;
+    background: white;
+}
 .nav-item a{
     font-size: 16px;
 }
@@ -92,6 +100,9 @@ header.masthead .container{
     padding-top: 30px;
 }
 @media screen and (min-width:1200px) {
+    section.contact form button{
+        margin-top:15px;
+    }
     header.masthead h1 {
         font-size: 4rem;
     }
@@ -118,6 +129,10 @@ header.masthead .container{
     header.masthead .container {
         height: 100vh;
     }
+    .title{
+        margin-bottom: 10px !important;
+    }
+    
 }
 
 @media screen and (min-width:992px) {
@@ -152,6 +167,13 @@ header.masthead .container{
       .navbar-brand {
           padding-left: 50px;
       }
+      section.contact form button{
+        margin-top:15px;
+    }
+    section.values .container{
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
 }
 
 .cd-headline {
