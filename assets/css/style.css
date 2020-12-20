@@ -94,7 +94,7 @@ header.masthead {
     background-size: cover;
 }
 header{    
-    animation: animate 15s ease-in-out infinite;
+    animation: animate 20s ease-in-out infinite;
 }
 header.masthead .container{
     padding-top: 30px;
