@@ -18,6 +18,55 @@ function myFunction(x) {
   x.classList.toggle("fa-sun");
   var ele = document.body;
   ele.classList.toggle('dark-mode');
+  if (x.classList[2]!=null){
+    document.getElementById('main-a-Nav').style.color='white';
+    document.getElementById('full-head').style.animation='none';
+    document.getElementById('react').src="assets/img/w-react.png";
+    document.getElementById('angular').src="assets/img/w-angular.png";
+    document.getElementById('html5').src="assets/img/w-html5.png";
+    document.getElementById('css').src="assets/img/w-css.png";
+    document.getElementById('js').src="assets/img/w-js.png";
+    document.getElementById('php').src="assets/img/w-php.png";
+    document.getElementById('python').src="assets/img/w-python.png";
+    document.getElementById('java').src="assets/img/w-java.png";
+    document.getElementById('node').src="assets/img/w-node.png";
+    document.getElementById('rails').src="assets/img/w-rails.png";
+    document.getElementById('ios').src="assets/img/w-ios.png";
+    document.getElementById('android').src="assets/img/w-android.png";
+    document.getElementById('react1').src="assets/img/w-react1.png";
+    document.getElementById('flutter').src="assets/img/w-flutter.png";
+    document.getElementById('wordpress').src="assets/img/w-wordpress.png";
+    document.getElementById('magento').src="assets/img/w-magento.png";
+    document.getElementById('shopify').src="assets/img/w-shopify.png";
+    document.getElementById('mysql').src="assets/img/w-sql.png";
+    document.getElementById('mongodb').src="assets/img/w-mongodb.png";
+    document.getElementById('oracle').src="assets/img/w-oracle.png";
+    document.getElementById('firebase').src="assets/img/w-firebase.png";
+  }
+  if (x.classList[2] == null){
+    document.getElementById('full-head').style.animation='animate 15s ease-in-out infinite';
+    document.getElementById('react').src="assets/img/react.png";
+    document.getElementById('angular').src="assets/img/angular.png";
+    document.getElementById('html5').src="assets/img/html5.png";
+    document.getElementById('css').src="assets/img/css.png";
+    document.getElementById('js').src="assets/img/js.png";
+    document.getElementById('php').src="assets/img/php.png";
+    document.getElementById('python').src="assets/img/python.png";
+    document.getElementById('java').src="assets/img/java.png";
+    document.getElementById('node').src="assets/img/node.png";
+    document.getElementById('rails').src="assets/img/rails.png";
+    document.getElementById('ios').src="assets/img/ios.png";
+    document.getElementById('android').src="assets/img/android.png";
+    document.getElementById('react1').src="assets/img/react.png";
+    document.getElementById('flutter').src="assets/img/flutter.png";
+    document.getElementById('wordpress').src="assets/img/wordpress.png";
+    document.getElementById('magento').src="assets/img/magento.png";
+    document.getElementById('shopify').src="assets/img/shopify.png";
+    document.getElementById('mysql').src="assets/img/mysql.png";
+    document.getElementById('mongodb').src="assets/img/mongodb.png";
+    document.getElementById('oracle').src="assets/img/oracle.png";
+    document.getElementById('firebase').src="assets/img/firebase.png";
+  }
 }
 
 // text typing effect
@@ -77,3 +126,5 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
+// nightmode image change
