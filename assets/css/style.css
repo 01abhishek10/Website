@@ -231,20 +231,16 @@ header.masthead .container{
     }
     25%{
         /* background-image: url(../img/pink-back.jpeg); */
-        background: rgb(223,212,182);
+        background: #f2994a;
         /* background: linear-gradient(90deg, rgba(223,212,182,1) 62%, rgba(223,212,182,1) 100%, rgba(245,235,226,1) 100%);  */
     }
     50%{
-        background: #DD82FF;
+        background: #4B6F44;
     }
     75%{
         background: rgb(124,126,213);
         /* background: linear-gradient(90deg, rgba(124,126,213,1) 0%, rgba(57,92,124,1) 0%, rgba(25,49,85,1) 89%);  */
     }
-    /* 80%{
-        background: rgb(124,126,213);
-        background: linear-gradient(90deg, rgba(124,126,213,1) 100%, rgba(124,126,213,1) 100%, rgba(124,126,213,1) 100%); 
-    } */
 }
 .technologies-section{
     margin-top:30px;
@@ -310,11 +306,27 @@ line-height: 28px;
 font-weight: 600;
 color: #252b33;
 }
-
-.tech-work .nav-link {
+a#cms-tab.nav-link.text-center.text-white.active {
+    background-color: black;
+}
+a#db-tab.nav-link.text-center.text-white.active {
+    background-color: black;
+}
+a#profile-tab.nav-link.text-center.text-white.active {
+    background-color: black;
+}
+a#contact-tab.nav-link.text-center.text-white.active {
+    background-color: black;
+}
+a#home-tab.nav-link.text-center.text-white.active {
+    background-color: black;
+}
+/* .tech-work a.nav-link{
     color:black !important;
 }
-
+.tech-nav-dark {
+    color:white !important;
+} */
 .tech-work ul,.tech-work ul li {
     font-family: Poppins, Open Sans, Helvetica Neue, Arial, sans-serif;
     font-weight: 600;

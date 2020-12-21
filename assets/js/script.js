@@ -1,3 +1,4 @@
+flag = 0;
 function openNav() {
   document.getElementById("myNav").style.width="100%";
 }
@@ -18,10 +19,45 @@ function myFunction(x) {
   x.classList.toggle("fa-sun");
   var ele = document.body;
   ele.classList.toggle('dark-mode');
-  console.log(ele);
+  // var hometab = document.getElementById('home-tab');
+  // hometab.classList.toggle('tech-nav-dark');
+  // var profiletab = document.getElementById('profile-tab');
+  // profiletab.classList.toggle('tech-nav-dark');
+  // var contacttab = document.getElementById('contact-tab');
+  // contacttab.classList.toggle('tech-nav-dark');
+  // var cmstab = document.getElementById('cms-tab');
+  // cmstab.classList.toggle('tech-nav-dark');
+  // var dbtab = document.getElementById('db-tab');
+  // dbtab.classList.toggle('tech-nav-dark');
   if (x.classList[2]!=null){
-    console.log(ele);
-    // document.getElementById('main-a-Nav').style.color='white';
+    document.getElementById('night-toggle').style.backgroundColor='white';
+    $(".nav-link").css("color", "white");
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      console.log('scroll val'+scroll);
+      document.getElementById('main-logo').src='assets/img/Main Logo.png';
+      if (scroll > 300) {
+        $("#mainNav").css("background" , "black");
+        $(".navbar-brand").css("color", "white");
+        if (screen.width >= 992) {
+        $(".nav-link").css("color", "white");
+        }
+        if (screen.width < 992) {
+        $(".nav-link").css("color", "black");
+        }
+    }
+    else{
+
+        $("#main-logo").attr("src", "assets/img/Main Logo.png");
+        $("#mainNav").css("background" , "transparent");	
+        $(".nav-link").css("color", "white");
+        
+    }
+    })
+    flag = 1;
+    console.log('Inside if'+flag);
+    console.log(x.classList);
+    document.getElementById('main-logo').src='assets/img/Main Logo.png';
     document.getElementById('full-head').style.animation='none';
     document.getElementById('react').src="assets/img/w-react.png";
     document.getElementById('angular').src="assets/img/w-angular.png";
@@ -44,9 +80,31 @@ function myFunction(x) {
     document.getElementById('mongodb').src="assets/img/w-mongodb.png";
     document.getElementById('oracle').src="assets/img/w-oracle.png";
     document.getElementById('firebase').src="assets/img/w-firebase.png";
+    var element = document.getElementById('contact-btn');
+    element.className = element.className.replace(/\bbtn-outline-dark\b/g, "btn-outline-light");
+    var element = document.getElementById('contact-btn2');
+    element.className = element.className.replace(/\bbtn-outline-dark\b/g, "btn-outline-light");
+    var element = document.getElementById('contact-btn3');
+    element.className = element.className.replace(/\bbtn-outline-dark\b/g, "btn-outline-light");
+    // to make text black in nightmode
+    var hometab = document.getElementById('home-tab');
+    hometab.className = hometab.className.replace(/\bnav-link text-center text-dark\b/g, "nav-link text-center text-white");
+    var profiletab = document.getElementById('profile-tab');
+    profiletab.className = profiletab.className.replace(/\bnav-link text-center text-dark\b/g, "nav-link text-center text-white"); 
+    var contacttab = document.getElementById('contact-tab');
+    contacttab.className = contacttab.className.replace(/\bnav-link text-center text-dark\b/g, "nav-link text-center text-white");
+    var cmstab = document.getElementById('cms-tab');
+    cmstab.className = cmstab.className.replace(/\bnav-link text-center text-dark\b/g, "nav-link text-center text-white");
+    var dbtab = document.getElementById('db-tab');
+    dbtab.className = dbtab.className.replace(/\bnav-link text-center text-dark\b/g, "nav-link text-center text-white");
   }
-  if (x.classList[2] == null){
-    console.log(ele);
+  else if (x.classList[2] == null){
+    document.getElementById('main-logo').src='assets/img/Favicon.png';
+    document.getElementById('night-toggle').style.backgroundColor='white';
+    $(".nav-link").css("color", "black");
+    flag = 0;
+    console.log(x.classList);
+    console.log('outside if'+flag);
     document.getElementById('full-head').style.animation='animate 12s ease-in-out infinite';
     document.getElementById('react').src="assets/img/react.png";
     document.getElementById('angular').src="assets/img/angular.png";
@@ -69,6 +127,23 @@ function myFunction(x) {
     document.getElementById('mongodb').src="assets/img/mongodb.png";
     document.getElementById('oracle').src="assets/img/oracle.png";
     document.getElementById('firebase').src="assets/img/firebase.png";
+    var element = document.getElementById('contact-btn');
+    element.className = element.className.replace(/\bbtn-outline-light\b/g, "btn-outline-dark");
+    var element = document.getElementById('contact-btn2');
+    element.className = element.className.replace(/\bbtn-outline-light\b/g, "btn-outline-dark");
+    var element = document.getElementById('contact-btn3');
+    element.className = element.className.replace(/\bbtn-outline-light\b/g, "btn-outline-dark");
+    // to make text dark in white mode
+    var hometab = document.getElementById('home-tab');
+    hometab.className = hometab.className.replace(/\bnav-link text-center text-white\b/g, "nav-link text-center text-dark");
+    var profiletab = document.getElementById('profile-tab');
+    profiletab.className = profiletab.className.replace(/\bnav-link text-center text-white\b/g, "nav-link text-center text-dark");
+    var contacttab = document.getElementById('contact-tab');
+    contacttab.className = contacttab.className.replace(/\bnav-link text-center text-white\b/g, "nav-link text-center text-dark");
+    var cmstab = document.getElementById('cms-tab');
+    cmstab.className = cmstab.className.replace(/\bnav-link text-center text-white\b/g, "nav-link text-center text-dark");
+    var dbtab = document.getElementById('db-tab');
+    dbtab.className = dbtab.className.replace(/\bnav-link text-center text-white\b/g, "nav-link text-center text-dark");
   }
 }
 
