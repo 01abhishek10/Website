@@ -94,7 +94,7 @@ header.masthead {
     background-size: cover;
 }
 header{    
-    animation: animate 20s ease-in-out infinite;
+    animation: animate 12s ease-in-out infinite;
 }
 header.masthead .container{
     padding-top: 30px;
@@ -235,8 +235,7 @@ header.masthead .container{
         /* background: linear-gradient(90deg, rgba(223,212,182,1) 62%, rgba(223,212,182,1) 100%, rgba(245,235,226,1) 100%);  */
     }
     50%{
-        background: rgb(124,126,213);
-        /* background-image: url(../img/purple-back.png); */
+        background: #DD82FF;
     }
     75%{
         background: rgb(124,126,213);
