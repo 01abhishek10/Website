@@ -42,6 +42,8 @@ function myFunction(x) {
     document.getElementById('mongodb').src="assets/img/w-mongodb.png";
     document.getElementById('oracle').src="assets/img/w-oracle.png";
     document.getElementById('firebase').src="assets/img/w-firebase.png";
+    document.getElementById('mob-values').style.background='white';
+    document.getElementById('dddd-values').style.color='white';
   }
   if (x.classList[2] == null){
     document.getElementById('main-a-Nav').style.color='black';
@@ -67,6 +69,8 @@ function myFunction(x) {
     document.getElementById('mongodb').src="assets/img/mongodb.png";
     document.getElementById('oracle').src="assets/img/oracle.png";
     document.getElementById('firebase').src="assets/img/firebase.png";
+    document.getElementById('mob-values').style.background='#000011';
+    document.getElementById('dddd-values').style.color='white';
   }
 }
 
@@ -128,4 +132,61 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-// nightmode image change
+// NUMBER COUNT INCREMENT
+//Animate my counter from 0 to set number (6)
+$({counter: 0}).animate({counter: 13}, {
+  //Animate over a period of 2seconds
+  duration: 3000,
+  //Progress animation at constant pace using linear
+  easing:'linear',
+  step: function() {    
+    //Every step of the animation, update the number value
+    //Use ceil to round up to the nearest whole int
+    $('.project').text(Math.ceil(this.counter))
+  },
+  complete: function() {
+    //Could add in some extra animations, like a bounc of colour change once the count up is complete.
+  }
+});
+$({counter: 0}).animate({counter: 80}, {
+  //Animate over a period of 2seconds
+  duration: 4000,
+  //Progress animation at constant pace using linear
+  easing:'linear',
+  step: function() {    
+    //Every step of the animation, update the number value
+    //Use ceil to round up to the nearest whole int
+    $('.business').text(Math.ceil(this.counter))
+  },
+  complete: function() {
+    //Could add in some extra animations, like a bounc of colour change once the count up is complete.
+  }
+});
+$({counter: 0}).animate({counter: 8}, {
+  //Animate over a period of 2seconds
+  duration: 3000,
+  //Progress animation at constant pace using linear
+  easing:'linear',
+  step: function() {    
+    //Every step of the animation, update the number value
+    //Use ceil to round up to the nearest whole int
+    $('.states').text(Math.ceil(this.counter))
+  },
+  complete: function() {
+    //Could add in some extra animations, like a bounc of colour change once the count up is complete.
+  }
+});
+$({counter: 0}).animate({counter: 11}, {
+  //Animate over a period of 2seconds
+  duration: 3000,
+  //Progress animation at constant pace using linear
+  easing:'linear',
+  step: function() {    
+    //Every step of the animation, update the number value
+    //Use ceil to round up to the nearest whole int
+    $('.size').text(Math.ceil(this.counter))
+  },
+  complete: function() {
+    //Could add in some extra animations, like a bounc of colour change once the count up is complete.
+  }
+});

@@ -124,6 +124,10 @@ header.masthead .container{
     .about-us strong{
         font-size:30px;
     }
+    .our-services img#seo{
+        width: 285px; 
+        height: 212px;
+    }
 }
 @media (max-width: 575.98px) { 
     header.masthead .container {
@@ -132,9 +136,29 @@ header.masthead .container{
     .title{
         margin-bottom: 10px !important;
     }
-    
+    .accomplishments .row .container{
+        text-align:center;
+        width: 40%;
+    }
+    .accomplishments .row .container span{
+        font-size: 30px;
+    }
+    .our-services img#seo {
+        width: 50%;
+    }
+    .our-services div.img-box{
+        margin-bottom: 20px !important;
+    }
+    .tech-work .col{
+        padding: 15px;
+    }
+    .tech-work #db .col{
+        padding: 5px;
+    }
+    p.cp-text{
+        font-size: 18px;
+    }
 }
-
 @media screen and (min-width:992px) {
     header.masthead h1 {
         font-size: 58px;
@@ -173,6 +197,21 @@ header.masthead .container{
     section.values .container{
         padding-right: 5rem;
         padding-left: 5rem;
+    }
+    .accomplishments .row .container{
+        font-size: 60px;
+        text-align:center;
+        width: 20%;
+    }
+    .accomplishments p{
+        margin-bottom: 0px;
+    }
+    .accomplishments span.total{
+        padding-left: 15px;
+    }
+    .our-services img#seo{
+        width: 285px; 
+        height: 212px;
     }
 }
 
