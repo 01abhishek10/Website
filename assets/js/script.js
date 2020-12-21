@@ -18,9 +18,10 @@ function myFunction(x) {
   x.classList.toggle("fa-sun");
   var ele = document.body;
   ele.classList.toggle('dark-mode');
-  // console.log(ele);
+  console.log(ele);
   if (x.classList[2]!=null){
-    document.getElementById('main-a-Nav').style.color='white';
+    console.log(ele);
+    // document.getElementById('main-a-Nav').style.color='white';
     document.getElementById('full-head').style.animation='none';
     document.getElementById('react').src="assets/img/w-react.png";
     document.getElementById('angular').src="assets/img/w-angular.png";
@@ -43,12 +44,10 @@ function myFunction(x) {
     document.getElementById('mongodb').src="assets/img/w-mongodb.png";
     document.getElementById('oracle').src="assets/img/w-oracle.png";
     document.getElementById('firebase').src="assets/img/w-firebase.png";
-    document.getElementById('mob-values').style.background='white';
-    document.getElementById('dddd-values').style.color='white';
   }
   if (x.classList[2] == null){
-    document.getElementById('main-a-Nav').style.color='black';
-    document.getElementById('full-head').style.animation='animate 15s ease-in-out infinite';
+    console.log(ele);
+    document.getElementById('full-head').style.animation='animate 12s ease-in-out infinite';
     document.getElementById('react').src="assets/img/react.png";
     document.getElementById('angular').src="assets/img/angular.png";
     document.getElementById('html5').src="assets/img/html5.png";
@@ -70,8 +69,6 @@ function myFunction(x) {
     document.getElementById('mongodb').src="assets/img/mongodb.png";
     document.getElementById('oracle').src="assets/img/oracle.png";
     document.getElementById('firebase').src="assets/img/firebase.png";
-    document.getElementById('mob-values').style.background='#000011';
-    document.getElementById('dddd-values').style.color='white';
   }
 }
 
