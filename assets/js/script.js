@@ -18,6 +18,7 @@ function myFunction(x) {
   x.classList.toggle("fa-sun");
   var ele = document.body;
   ele.classList.toggle('dark-mode');
+  // console.log(ele);
   if (x.classList[2]!=null){
     document.getElementById('main-a-Nav').style.color='white';
     document.getElementById('full-head').style.animation='none';
