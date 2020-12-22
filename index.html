@@ -36,65 +36,90 @@
     </head>
     <body>
         <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="ham-icon" class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" onclick="openNav()"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img id="main-logo" src="assets/img/Favicon.png" width="65" height="40" alt="">
+                <img id="main-logo" src="assets/img/Main Logo.png" width="75" height="50" alt="">
               </a>
             <div id="myNav" class="overlay">
                 <!--button to close navigation overlay-->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <!--nightmode toggle icon in mobile-->
-                <button class="btn text-right text-white" type="button" style="margin-right: 5px;" onclick="retflag()">
+                <button id="night-toggle-mob" class="btn text-right text-white d-lg-none" type="button" onclick="retflag()">
                     <i onclick="myFunction(this)" class="fas fa-moon" style="text-align: center; color:black;"></i>
                 </button>
                 <!--overlay content start-->
-                <div class="overlay-content d-flex justify-content-start" style="padding-left:15px;" id="navbarToggler">
+                <div class="overlay-content d-flex justify-content-start" style="padding-left:25px;" id="navbarToggler">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="mob-nav nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item mob-menu">
-                        <a class="mob-nav nav-link active" href="about.html">About Us</a>
+                        <a class="mob-nav nav-link active" href="about.html">About Us +</a>
                     </li>
                     <li class="nav-item">
-                        <a class="mob-nav nav-link active" href="contact.html">Contact</a>
+                        <a class="mob-nav nav-link active" href="contact.html">Contact +</a>
                     </li>
                     <li class="nav-item">
-                        <a class="mob-nav nav-link active" href="blog.html">Blog</a>
+                        <a class="mob-nav nav-link active" href="blog.html">Blog +</a>
                     </li>
                     </ul>
                 </div>
             </div>
+            
+            <!-- action menu on mobile -->
+            <!-- <div id="subNav" class="action-overlay"> -->
+                <!--button to close navigation overlay-->
+                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeSubNav()">&times;</a> -->
+                <!--overlay content start-->
+                <!-- <div class="action-overlay-content d-flex justify-content-start" style="padding-left:25px;" id="navbarToggler"> -->
+                    <!-- <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="mob-nav nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mob-menu">
+                        <a class="mob-nav nav-link active" href="about.html">About Us +</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="mob-nav nav-link active" href="contact.html">Contact +</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="mob-nav nav-link active" href="blog.html">Blog +</a>
+                    </li>
+                    </ul>
+                </div>
+            </div> -->
+
+
 
             <!--normal navbar for large and extra large devices-->
             <div id="desk-display" class="collapse navbar-collapse d-x-flex justify-content-end">
                 <ul class="navbar-nav mt-2 mt-lg-0">
                     <li class="nav-item">
-                       <a class="nav-link active" href="index.html">Home</a>
+                       <a class="nav-link text-white active" href="index.html">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link active" href="about.html">About Us</a>
+                        <a class="nav-link text-white active" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
+                        <a class="nav-link text-white active" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="blog.html">Blog</a>
+                        <a class="nav-link text-white active" href="blog.html">Blog</a>
                     </li>
                 </ul>
                 <!--contact us button-->
                 <button class="btn btn-primary text-white d-none d-lg-block rounded-pill" type="button">
                     <a class="btn btn-primary js-scroll-trigger" role="button" href="contact.html">Contact Us</a>
                 </button>
-                <!--nightmode icon-->
+                <!--nightmode icon in desktop view-->
                 <button id="night-toggle" class="btn text-right text-white d-none d-lg-block rounded-circle" type="button" style="margin-right: 5px;">
                     <i onclick="myFunction(this)" class="fas fa-moon" style="text-align: center; color:black; font-size: large;"></i>
                 </button>
             </div>
             <!--telegram icon on mobile display-->
-            <button class="btn d-md-none" type="button" style="background:transparent;">
+            <button id="tele-icon" class="btn bg-transparent d-md-none" type="button" style="background:transparent;">
                 <img src='assets/img/Icon.png' onclick="openSubNav()" alt="" width="25" height="20">
             </button>
         </nav>
@@ -459,21 +484,24 @@
             $(document).ready(function(){
             $(window).scroll(function(){
                 var scroll = $(window).scrollTop();
-                if (scroll > 300 && flag==0) {
-                    $("#main-logo").attr("src", "assets/img/Main Logo.png");
+                if (scroll > 300) {
                     $("#mainNav").css("background" , "black");
                     document.getElementById('night-toggle').style.backgroundColor='white';
                     $(".navbar-brand").css("color", "white");
                     if (screen.width >= 992) {
                     $(".nav-link").css("color", "white");
+                    
                     }
                     if (screen.width < 992) {
+                        // console.log(screen.width);
                     $(".nav-link").css("color", "black");
+                    // $(".navbar-toggler").css("backgroundColor", "white");
                     }
                 }
                 else{
-                    // document.getElementById('night-toggle').style.backgroundColor='transparent';
-                    $("#main-logo").attr("src", "assets/img/Favicon.png");
+    
+                    document.getElementById('night-toggle').style.backgroundColor='transparent';
+                    $("#main-logo").attr("src", "assets/img/Main Logo.png");
                     $("#mainNav").css("background" , "transparent");
                     $(".navbar-brand").css("color", "black");  	
                     $(".nav-link").css("color", "black");
