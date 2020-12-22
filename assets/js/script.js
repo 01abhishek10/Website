@@ -8,11 +8,11 @@ function closeNav() {
 }
 
 function openSubNav() {
-  document.getElementById("subNav").style.display="block";
+  document.getElementById("subNav").style.height="100%";
 }
 
 function closeSubNav() {
-  document.getElementById("subNav").style.display="none";
+  document.getElementById("subNav").style.height="0%";
 }
 function contactFunction(x){
   x.classList.toggle("fa-sun");

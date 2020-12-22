@@ -60,6 +60,48 @@ h1,h2,h3,h4,h5,h6,#mainNav, #contactmainNav, #blogmainNav, #mainNav .navbar-bran
     overflow-x: hidden;
     transition: 0.5s;
 }
+.action-overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0, 0.9);;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.action-overlay .closebtn {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    font-size: 40px;
+}
+.action-overlay-content {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    border-top: 3px solid;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+}
+.action-overlay li{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.action-overlay a{
+    padding-right: 8px !important;
+    padding-left: 50px !important;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+/* #subNav img{
+    margin-top:30px;
+} */
 .overlay-content {
     position: relative;
     top: 6%;
@@ -181,8 +223,7 @@ header.masthead .container{
         letter-spacing: 1px;
     }
     .navbar-brand{
-        padding-right: 50% !important;
-        margin-right: 0rem !important;
+        margin-right: 48% !important;
     }
     #full-head p.text-faded{
         text-align: left;
@@ -250,8 +291,12 @@ header.masthead .container{
     .accomplishments .four {
         margin-top:35px !important;
     }
+
 }
 @media screen and (min-width:992px) {
+    #full-head div.next{
+        display: inline;
+    }
     section.intro h1{
         margin-top:5rem;
     }
@@ -324,7 +369,7 @@ header.masthead .container{
     padding-bottom: 20px;
 }
 @keyframes animate{
-    0%{
+    0%,100%{
         background: rgb(124,124,210);
 /* background: linear-gradient(90deg, rgba(124,124,210,1) 3%, rgba(80,79,146,1) 36%, rgba(78,78,144,1) 100%);   */
     }
@@ -340,7 +385,7 @@ header.masthead .container{
         background: #f2994a;
         /* background: linear-gradient(90deg, rgba(124,126,213,1) 0%, rgba(57,92,124,1) 0%, rgba(25,49,85,1) 89%);  */
     }
-    100%{
+    90%{
         background: #ee9ca7;
     }
 }
