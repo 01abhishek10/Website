@@ -3,40 +3,80 @@
     <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Navbar</title>
-        <meta name='description' content="Koders.co">
+        <title>Updot</title>
+        <meta name='description' content="Web & App development Company">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <!--favicon icon-->
+        <link rel="icon" href="assets/img/Favicon.ico" type="image/x-icon" sizes="32x28">
+
+        <!-- custom stylesheet -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <!-- boostrap cdn -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        
+        <!--fonts-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"/>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- icons -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+        <!-- animate.css stylesheet -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/util.css">
-	    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        
+        <!-- style sheet -->
+        <style>
+            .bg-dark{
+                background-color: black !important;
+            }
+            .bg-light{
+                background-color: #fff !important;
+            }
+            .text-white {
+                color: #fff !important;  
+            }
+            .text-dark{
+                color: black !important;
+            }
+        </style>
+        <!-- bootstrap.js script -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="https://cdn.rawgit.com/InventPartners/bootstrap-responsive-tabs/master/jquery.responsivetabs.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="assets/js/script.js"></script>
-        
     </head>
+
     <body>
-        <nav id="contactmainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
+
+        <!-- navigation start -->
+        <nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+            <!-- hamburger on mobile view -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" onclick="openNav()"></span>
             </button>
-            <a class="navbar-brand mx-auto" href="index.html">Navbar brand</a>
+
+            <!-- main logo -->
+            <a class="navbar-brand" href="#">
+                <img id="main-logo" src="assets/img/Favicon.png" width="65" height="40" alt="">
+              </a>
+
             <div id="myNav" class="overlay">
+
                 <!--button to close navigation overlay-->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <!--overlay content start-->
-                <div class="overlay-content" id="navbarToggler">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <!--nightmode toggle icon in mobile-->
+                <button class="btn text-right text-white" type="button" style="margin-right: 5px;">
+                    <i onclick="aboutFunction(this)" class="fas fa-moon" style="text-align: center; color:black;"></i>
+                </button>
+
+                <!--overlay content in mobile start-->
+                <div class="overlay-content d-flex justify-content-start" style="padding-left:15px;" id="navbarToggler">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="mob-nav nav-link active" href="index.html">Home</a>
                     </li>
@@ -53,36 +93,39 @@
                 </div>
             </div>
 
-            <!--normal navbar for large and extra large devices-->
-            <div class="collapse navbar-collapse d-x-flex justify-content-end" data-aos="fade-down">
+            <!--normal navbar for desktop-->
+            <div id="desk-display" class="collapse navbar-collapse d-x-flex justify-content-end">
                 <ul class="navbar-nav mt-2 mt-lg-0">
                     <li class="nav-item">
-                       <a class="nav-link active" href="index.html">Home</a>
+                       <a id="desk1-display" class="nav-link active text-dark" href="index.html">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link active" href="about.html">About Us</a>
+                        <a id="desk2-display" class="nav-link active text-dark" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
+                        <a id="desk3-display" class="nav-link active text-dark" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="blog.html">Blog</a>
+                        <a id="desk4-display" class="nav-link active text-dark" href="blog.html">Blog</a>
                     </li>
                 </ul>
+
                 <!--contact us button-->
                 <button class="btn btn-primary text-white d-none d-lg-block rounded-pill" type="button">
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="contact.html">Contact Us</a>
+                    <a class="btn btn-primary js-scroll-trigger" role="button" href="contact.html">Contact Us</a>
                 </button>
-                <!--nightmode icon-->
-                <button class="btn text-right text-white d-none d-lg-block" type="button" style="margin-right:5px;">
-                    <i onclick="myFunction(this)" class="fas fa-moon" style="text-align: center; color:black; font-size: large;"></i>
+
+                <!--nightmode in desktop icon-->
+                <button id="night-toggle" class="btn text-right text-white d-none d-lg-block rounded-circle bg-dark" type="button" style="margin-right: 5px;">
+                    <i onclick="contactFunction(this)" class="fas fa-moon" style="text-align: center; font-size: large;"></i>
                 </button>
             </div>
             <!--telegram icon on mobile display-->
             <button class="btn d-md-none" type="button" style="background:transparent;">
-                <i class="fab fa-telegram-plane" onclick="openSubNav()" style="color: rgb(7,7,7);"></i>
+                <img src='assets/img/Icon.png' onclick="openSubNav()" alt="" width="25" height="20">
             </button>
         </nav>
+        
 
         <!--small intro start-->
         <section class="intro">
@@ -146,7 +189,7 @@
                             </div>
                             
                             <div class="col-lg-4 py-3">
-                              <button class="btn btn-outline-dark rounded-pill " type="submit" style="font-weight: 600;">SUBMIT</button>
+                              <button id="contact-btn" class="btn btn-outline-dark rounded-pill " type="submit" style="font-weight: 600;">SUBMIT</button>
                             </div>
                           </form>
                     </div>
@@ -160,15 +203,15 @@
         <!--newsletter subscription start-->
         <section class="news">
             <div class="container">
-                <div class="row" data-aos="fade-down">
-                    <h1 class="cd-hire mt-5 animate__animated animate__pulse">Subscribe to our newsletter</h1>
+                <div class="row">
+                    <h1 class="cd-hire mt-5">Subscribe to our newsletter</h1>
                     <form action="#">
                     <div class="col-lg-6 mt-3 mb-5">
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="col-lg-6 mt-3 mb-5">
-                        <button type="submit" class="btn btn-outline-dark rounded-pill">Subscribe Now!</button>
+                        <button id="contact-btn3" type="submit" class="btn btn-outline-dark rounded-pill">Subscribe Now!</button>
                     </div>
                 </form>
                 </div>
@@ -181,15 +224,19 @@
             <footer>
                 <div class="container">
                     <div class="row">
+                                <p class="cp-text text-center">
+                                © Copyright 2020 UpDot. 
+                            </p>
                             <p class="cp-text text-center">
-                                © Copyright 2020 UpDot. All rights reserved.
+                                All rights reserved. 
                             </p>
                     </div>
                 </div>
             </footer>
         </section>
         <!--footer ends-->
-        <script>
+
+        <!-- <script>
             // $(document).ready(function(){
             // $(window).scroll(function(){
             //     var scroll = $(window).scrollTop();
@@ -212,6 +259,6 @@
             // })
             // })
             AOS.init();
-        </script>
+        </script> -->
     </body>
 </html>

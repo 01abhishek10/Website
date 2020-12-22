@@ -132,6 +132,9 @@ header.masthead .container{
     #mainNav img{
         margin-left:20px;
     }
+    .blog .row {
+        margin-top: 3.5rem;
+    }
 }
 @media (max-width: 575.98px) { 
     header.masthead .container {
@@ -216,6 +219,13 @@ header.masthead .container{
     .our-services img#seo{
         width: 285px; 
         height: 212px;
+    }
+    section.values .img-card{
+        margin-right: 5rem;
+    margin-left: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.9rem;
     }
 }
 

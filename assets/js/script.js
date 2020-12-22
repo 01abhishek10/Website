@@ -14,6 +14,49 @@ function openSubNav() {
 function closeSubNav() {
   document.getElementById("subNav").style.display="none";
 }
+function contactFunction(x){
+  x.classList.toggle("fa-sun");
+  var ele = document.body;
+  ele.classList.toggle('dark-mode');
+  if(x.classList[2]!=null){
+    $("#main-logo").attr("src", "assets/img/Main Logo.png");
+    var navLink = document.getElementById('desk1-display');
+    console.log(navLink.className)
+    navLink.className = navLink.className.replace(/\btext-dark\b/g, "text-white");
+    console.log(navLink.className)
+    var navLink = document.getElementById('desk2-display');
+    navLink.className = navLink.className.replace(/\btext-dark\b/g, "text-white");
+    var navLink = document.getElementById('desk3-display');
+    navLink.className = navLink.className.replace(/\btext-dark\b/g, "text-white");
+    var navLink = document.getElementById('desk4-display');
+    navLink.className = navLink.className.replace(/\btext-dark\b/g, "text-white");
+    var mainNav = document.getElementById('mainNav');
+    mainNav.className = mainNav.className.replace(/\bbg-light\b/g, "bg-dark");
+    var element = document.getElementById('contact-btn');
+    element.className = element.className.replace(/\bbtn-outline-dark\b/g, "btn-outline-light");
+    var element = document.getElementById('contact-btn3');
+    element.className = element.className.replace(/\bbtn-outline-dark\b/g, "btn-outline-light");
+  }
+  else{
+    $("#main-logo").attr("src", "assets/img/Favicon.png");
+    // $("#mainNav").css("background" , "white");
+    var navLink = document.getElementById('desk1-display');
+    navLink.className = navLink.className.replace(/\btext-white\b/g, "text-dark");
+    var navLink = document.getElementById('desk2-display');
+    navLink.className = navLink.className.replace(/\btext-white\b/g, "text-dark");
+    var navLink = document.getElementById('desk3-display');
+    navLink.className = navLink.className.replace(/\btext-white\b/g, "text-dark");
+    var navLink = document.getElementById('desk4-display');
+    navLink.className = navLink.className.replace(/\btext-white\b/g, "text-dark");
+    var mainNav = document.getElementById('mainNav');
+    mainNav.className = mainNav.className.replace(/\bbg-dark\b/g, "bg-light");
+    var element = document.getElementById('contact-btn');
+    element.className = element.className.replace(/\bbtn-outline-light\b/g, "btn-outline-dark");
+    var element = document.getElementById('contact-btn3');
+    element.className = element.className.replace(/\bbtn-outline-light\b/g, "btn-outline-dark");
+  }
+}
+
 function aboutFunction(x){
   x.classList.toggle("fa-sun");
   var ele = document.body;
