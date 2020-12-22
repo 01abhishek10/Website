@@ -110,6 +110,19 @@ function myFunction(x) {
   var ele = document.body;
   ele.classList.toggle('dark-mode');
   if (x.classList[2]!=null){
+    //changing footer link colors
+    var fla = document.getElementById('fl-a');
+    fla.className = fla.className.replace(/\bdark\b/g, "white");
+    var flb = document.getElementById('fl-b');
+    fla.className = fla.className.replace(/\bdark\b/g, "white");
+    var flc = document.getElementById('fl-a');
+    fla.className = fla.className.replace(/\bdark\b/g, "white");
+    var fld = document.getElementById('fl-a');
+    fla.className = fla.className.replace(/\bdark\b/g, "white");
+    var fle = document.getElementById('fl-a');
+    fla.className = fla.className.replace(/\bdark\b/g, "white");
+    var flf = document.getElementById('fl-a');
+    fla.className = fla.className.replace(/\bdark\b/g, "white");
 //changing mobile overlay background
     var mobhamicon = document.getElementById('ham-icon');
     mobhamicon.className = mobhamicon.className.replace(/\bbg-transparent\b/g, "bg-white");
@@ -138,7 +151,12 @@ function myFunction(x) {
        
     }
     else{
-      
+        if (screen.width < 992) {
+          var mobhamicon = document.getElementById('ham-icon');
+    mobhamicon.className = mobhamicon.className.replace(/\bbg-transparent\b/g, "bg-white");
+    var teleicon = document.getElementById('tele-icon');
+    teleicon.className = teleicon.className.replace(/\bbg-transparent\b/g, "bg-white");
+        }
         $("#main-logo").attr("src", "assets/img/Main Logo.png");
         $("#mainNav").css("background" , "transparent");	
         $(".nav-link").css("color", "white");
