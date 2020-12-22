@@ -1,4 +1,4 @@
-flag = 0;
+
 function openNav() {
   document.getElementById("myNav").style.width="100%";
 }
@@ -109,10 +109,14 @@ function myFunction(x) {
   x.classList.toggle("fa-sun");
   var ele = document.body;
   ele.classList.toggle('dark-mode');
-
   if (x.classList[2]!=null){
+//changing mobile overlay background
+    var mobhamicon = document.getElementById('ham-icon');
+    mobhamicon.className = mobhamicon.className.replace(/\bbg-transparent\b/g, "bg-white");
+    var teleicon = document.getElementById('tele-icon');
+    teleicon.className = teleicon.className.replace(/\bbg-transparent\b/g, "bg-white");
+
     document.getElementById('night-toggle').style.backgroundColor='white';
-    $(".nav-link").css("color", "white");
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
       console.log('scroll val'+scroll);
@@ -124,19 +128,23 @@ function myFunction(x) {
         $(".nav-link").css("color", "white");
         }
         if (screen.width < 992) {
+          var mobhamicon = document.getElementById('ham-icon');
+    mobhamicon.className = mobhamicon.className.replace(/\bbg-white\b/g, "bg-transparent");
+    var teleicon = document.getElementById('tele-icon');
+    teleicon.className = teleicon.className.replace(/\bbg-white\b/g, "bg-transparent");
+          $("#mainNav").css("background" , "#37474F");
         $(".nav-link").css("color", "black");
         }
+       
     }
     else{
-
+      
         $("#main-logo").attr("src", "assets/img/Main Logo.png");
         $("#mainNav").css("background" , "transparent");	
         $(".nav-link").css("color", "white");
         
     }
     })
-    flag = 1;
-    console.log('Inside if'+flag);
     console.log(x.classList);
     document.getElementById('main-logo').src='assets/img/Main Logo.png';
     document.getElementById('full-head').style.animation='none';
@@ -180,12 +188,16 @@ function myFunction(x) {
     dbtab.className = dbtab.className.replace(/\bnav-link text-center text-dark\b/g, "nav-link text-center text-white");
   }
   else if (x.classList[2] == null){
-    document.getElementById('main-logo').src='assets/img/Favicon.png';
+    var mobhamicon = document.getElementById('ham-icon');
+    mobhamicon.className = mobhamicon.className.replace(/\bbg-white\b/g, "bg-transparent");
+    var teleicon = document.getElementById('tele-icon');
+    teleicon.className = mobhamicon.className.replace(/\bbg-white\b/g, "bg-transparent");
+    if (screen.width < 992){
+    var temp = document.getElementById('myNav');
+    temp.className = temp.className.replace(/\bdark-overlay\b/g,"overlay");
+    }
     document.getElementById('night-toggle').style.backgroundColor='white';
-    $(".nav-link").css("color", "black");
-    flag = 0;
     console.log(x.classList);
-    console.log('outside if'+flag);
     document.getElementById('full-head').style.animation='animate 12s ease-in-out infinite';
     document.getElementById('react').src="assets/img/react.png";
     document.getElementById('angular').src="assets/img/angular.png";

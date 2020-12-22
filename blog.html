@@ -66,29 +66,26 @@
               </a>
 
             <div id="myNav" class="overlay">
-
                 <!--button to close navigation overlay-->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
                 <!--nightmode toggle icon in mobile-->
-                <button class="btn text-right text-white" type="button" style="margin-right: 5px;">
-                    <i onclick="aboutFunction(this)" class="fas fa-moon" style="text-align: center; color:black;"></i>
+                <button id="night-toggle-mob" class="btn text-right text-white d-lg-none" type="button" onclick="retflag()">
+                    <i onclick="myFunction(this)" class="fas fa-moon" style="text-align: center; color:black;"></i>
                 </button>
-
-                <!--overlay content in mobile start-->
-                <div class="overlay-content d-flex justify-content-start" style="padding-left:15px;" id="navbarToggler">
+                <!--overlay content start-->
+                <div class="overlay-content d-flex justify-content-start" style="padding-left:25px;" id="navbarToggler">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="mob-nav nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item mob-menu">
-                        <a class="mob-nav nav-link active" href="about.html">About Us</a>
+                        <a class="mob-nav nav-link active" href="about.html">About Us +</a>
                     </li>
                     <li class="nav-item">
-                        <a class="mob-nav nav-link active" href="contact.html">Contact</a>
+                        <a class="mob-nav nav-link active" href="contact.html">Contact +</a>
                     </li>
                     <li class="nav-item">
-                        <a class="mob-nav nav-link active" href="blog.html">Blog</a>
+                        <a class="mob-nav nav-link active" href="blog.html">Blog +</a>
                     </li>
                     </ul>
                 </div>

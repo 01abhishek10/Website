@@ -40,14 +40,14 @@
                 <span class="navbar-toggler-icon" onclick="openNav()"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img id="main-logo" src="assets/img/Main Logo.png" width="75" height="50" alt="">
+                <img id="main-logo" src="assets/img/Main Logo.png" width="70" height="40" alt="">
               </a>
             <div id="myNav" class="overlay">
                 <!--button to close navigation overlay-->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <!--nightmode toggle icon in mobile-->
                 <button id="night-toggle-mob" class="btn text-right text-white d-lg-none" type="button" onclick="retflag()">
-                    <i onclick="myFunction(this)" class="fas fa-moon" style="text-align: center; color:black;"></i>
+                    <i onclick="myFunction(this)" class="fas fa-moon" style="text-align: center; color: black;"></i>
                 </button>
                 <!--overlay content start-->
                 <div class="overlay-content d-flex justify-content-start" style="padding-left:25px;" id="navbarToggler">
@@ -120,7 +120,7 @@
             </div>
             <!--telegram icon on mobile display-->
             <button id="tele-icon" class="btn bg-transparent d-md-none" type="button" style="background:transparent;">
-                <img src='assets/img/Icon.png' onclick="openSubNav()" alt="" width="25" height="20">
+                <img src='assets/img/Icon.png' onclick="openSubNav()" alt="" width="35" height="30">
             </button>
         </nav>
         
@@ -129,7 +129,7 @@
             <div class="container my-auto mx-auto">
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
-                        <h1 class="text-uppercase animate__animated animate__pulse ">Website Development Services</h1>
+                        <h1 class="text-uppercase animate__animated animate__pulse ">Website <div class="next">Development</div> Services</h1>
                         <hr />
                     </div>
                 </div>
@@ -273,12 +273,12 @@
                         <p>Repeat</p>
                         <span class="total business"></span><span>%</span>
                     </div>
-                    <div class="container mx-3 px-3">
+                    <div class="container three mx-3 px-3">
                         <h3>States</h3>
                         <p>Covered</p>
                         <span class="total states"></span><!--<span>+</span>-->
                     </div>
-                    <div class="container mx-3 px-3">
+                    <div class="container four mx-3 px-3">
                         <h3>Team</h3>
                         <p>size</p>
                         <span class="total size"></span><span>+</span>
@@ -485,7 +485,7 @@
             $(window).scroll(function(){
                 var scroll = $(window).scrollTop();
                 if (scroll > 300) {
-                    $("#mainNav").css("background" , "black");
+                    $("#mainNav").css("background" , "#37474F");
                     document.getElementById('night-toggle').style.backgroundColor='white';
                     $(".navbar-brand").css("color", "white");
                     if (screen.width >= 992) {
@@ -499,7 +499,6 @@
                     }
                 }
                 else{
-    
                     document.getElementById('night-toggle').style.backgroundColor='transparent';
                     $("#main-logo").attr("src", "assets/img/Main Logo.png");
                     $("#mainNav").css("background" , "transparent");
