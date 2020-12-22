@@ -175,14 +175,14 @@ header.masthead .container{
         padding-left:30px;
     }
     .navbar-brand{
-        padding-right: 40%!important;
+        padding-right: 40% !important;
     }
     #full-head p.text-faded{
         text-align: left;
         padding-left:30px;
     }
     #full-head button{
-        margin-left:auto !important;
+        margin-right: 40% !important;
     }
     #full-head .next{
         padding-top:10px;
@@ -334,7 +334,7 @@ header.masthead .container{
         /* background: linear-gradient(90deg, rgba(124,126,213,1) 0%, rgba(57,92,124,1) 0%, rgba(25,49,85,1) 89%);  */
     }
     100%{
-        background: rgb(124,126,213);
+        background: #ee9ca7;
     }
 }
 .technologies-section{
