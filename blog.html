@@ -50,7 +50,11 @@
     <body>
 
         <!-- main navbar -->
+<<<<<<< HEAD
         <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
+=======
+        <nav id="mainNav" style="background:#37474F;" class="navbar navbar-expand-lg navbar-light fixed-top">
+>>>>>>> 402bd788241aa30513654aabba50b12090c8f0c1
 
             <!-- hamburger on mobile view -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +63,11 @@
 
             <!-- main logo -->
             <a class="navbar-brand" href="#">
+<<<<<<< HEAD
                 <img id="main-logo" src="assets/img/Footer Logo.png" width="100" height="40" alt="">
+=======
+                <img id="main-logo" src="assets/img/New logo.png" width="100" height="40" alt="">
+>>>>>>> 402bd788241aa30513654aabba50b12090c8f0c1
               </a>
 
             <div id="myNav" class="overlay">
@@ -381,11 +389,16 @@
         </script>
 
 
+<<<<<<< HEAD
         <script>
+=======
+        <!--<script>
+>>>>>>> 402bd788241aa30513654aabba50b12090c8f0c1
             
             $(document).ready(function(){
             $(window).scroll(function(){
                 var scroll = $(window).scrollTop();
+<<<<<<< HEAD
                 console.log(scroll);
                 var dmode = document.querySelector('.dark-mode');
                 if (scroll > 300 && dmode == null) {
@@ -466,6 +479,33 @@
             })
             })
         </script>
+=======
+                if (scroll > 300) {
+                    $("#mainNav").css("background" , "#37474F");
+                    document.getElementById('night-toggle').style.backgroundColor='white';
+                    $(".navbar-brand").css("color", "white");
+                    if (screen.width >= 992) {
+                    $(".nav-link").css("color", "white");
+                    
+                    }
+                    if (screen.width < 992) {
+                        // console.log(screen.width);
+                    $(".nav-link").css("color", "black");
+                    // $(".navbar-toggler").css("backgroundColor", "white");
+                    }
+                }
+                else{
+                    document.getElementById('night-toggle').style.backgroundColor='transparent';
+                    $("#main-logo").attr("src", "assets/img/New logo.png");
+                    $("#mainNav").css("background" , "transparent");
+                    $(".navbar-brand").css("color", "black");  	
+                    $(".nav-link").css("color", "black");
+                    
+                }
+            })
+            })
+        </script>-->
+>>>>>>> 402bd788241aa30513654aabba50b12090c8f0c1
 
     </body>
 </html>
