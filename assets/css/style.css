@@ -32,16 +32,16 @@ h1,h2,h3,h4,h5,h6,#mainNav, #contactmainNav, #blogmainNav, #mainNav .navbar-bran
 }
 .dark-overlay-content {
     position: relative;
-    top: 6%;
+    /* top: 6%; */
     width: 100%;
     text-align: left;
-    margin-top:30px;
+    /* margin-top:30px; */
 }
 .dark-overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: white;
+    color: white !important;
     display: block;
     transition: 0.3s;
 }
@@ -138,7 +138,7 @@ h1,h2,h3,h4,h5,h6,#mainNav, #contactmainNav, #blogmainNav, #mainNav .navbar-bran
         font-size: 35px;
 }
 a.mob-nav{
-    color:black !important;
+    /* color:black !important; */
     font-size: 30px !important;
 }
 
@@ -219,6 +219,9 @@ header.masthead .container{
     .intro .container .mt-5.pt-5{
         margin-top:0rem !important;
     }
+    .footer-news {
+        padding-left:20px !important;
+    }
     .contact .row.pb-3 h2, .news .row.pb-3 h2{
         margin-bottom: 15px;
     }
@@ -235,7 +238,7 @@ header.masthead .container{
         letter-spacing: 1px;
     }
     .navbar-brand{
-        margin-right: 40% !important;
+        margin-right: 52% !important;
     }
     #full-head p.text-faded{
         text-align: left;

@@ -52,7 +52,7 @@
                 <!--button to close navigation overlay-->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <!--nightmode toggle icon in mobile-->
-                <button id="night-toggle-mob" class="btn text-right text-white d-lg-none" type="button" onclick="retflag()">
+                <button id="night-toggle-mob" class="btn text-right text-white d-lg-none" type="button">
                     <i onclick="myFunction(this)" class="fas fa-moon" style="text-align: center; color: black;"></i>
                 </button>
                 <!--overlay content start-->
@@ -62,13 +62,13 @@
                         <a class="mob-nav nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item mob-menu">
-                        <a class="mob-nav nav-link active" href="about.html">About Us +</a>
+                        <a class="mob-nav nav-link active" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="mob-nav nav-link active" href="contact.html">Contact +</a>
+                        <a class="mob-nav nav-link active" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="mob-nav nav-link active" href="blog.html">Blog +</a>
+                        <a class="mob-nav nav-link active" href="blog.html">Blog</a>
                     </li>
                     </ul>
                 </div>
@@ -526,6 +526,7 @@
                         //scrolled and not in dark mode in mobile view;
                         $("#main-logo").attr("src", "assets/img/Main Logo.png");
                         // console.log(screen.width);
+                        $("#mainNav").css("background", "#37474F");
                         $(".nav-link").css("color", "black");
                         // $(".navbar-toggler").css("backgroundColor", "white");
                     }
@@ -563,7 +564,7 @@
                     if(screen.width < 768){
                         //scrolled in darkmode in mobile view
                     // $("#main-logo").attr("src", "assets/img/New logo.png");
-                    $("#mainNav").css("background" , "#37474F");
+                    $("#mainNav").css("background" , "black");
                     $(".navbar-brand").css("color", "black");  	
                     $(".nav-link").css("color", "black");
                     }
@@ -573,10 +574,11 @@
                     console.log('not scrolled in dark');
                     //didn't scroll in darkmode 
                     document.getElementById('night-toggle').style.backgroundColor='white';
-                    $("#mainNav").css("background" , "black");//before scrolling make bg black
                     if(screen.width >=992) {
                         $(".nav-link").css("color", "white");
+                        $("#mainNav").css("background" , "transparent");
                     }
+
                 }
             })
             })

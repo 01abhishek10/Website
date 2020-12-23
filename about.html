@@ -33,13 +33,7 @@
             .border {
                 border: 1px dashed #dee2e6 !important;
             }
-            .bg-dark{
-                background-color: black !important;
-            }
-            .bg-light{
-                background-color: #fff !important;
-            }
-            .text-white {
+            .text-white , .white{
                 color: #fff !important;  
             }
             .text-dark{
@@ -53,7 +47,7 @@
     </head>
     <body>
         <!-- main navbar -->
-        <nav id="mainNav" style="background:#37474F;" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
 
             <!-- hamburger on mobile view -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,15 +56,15 @@
 
             <!-- main logo -->
             <a class="navbar-brand" href="#">
-                <img id="main-logo" src="assets/img/New logo.png" width="100" height="40" alt="">
+                <img id="main-logo" src="assets/img/Footer Logo.png" width="100" height="40" alt="">
               </a>
 
               <div id="myNav" class="overlay">
                 <!--button to close navigation overlay-->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <!--nightmode toggle icon in mobile-->
-                <button id="night-toggle-mob" class="btn text-right text-white d-lg-none" type="button" onclick="retflag()">
-                    <i onclick="aboutFunction(this)" class="fas fa-moon" style="text-align: center; color:black;"></i>
+                <button id="night-toggle-mob" class="btn text-right text-white d-lg-none" type="button">
+                    <i onclick="myFunction(this)" class="fas fa-moon" style="text-align: center; color:black;"></i>
                 </button>
                 <!--overlay content start-->
                 <div class="overlay-content d-flex justify-content-start" style="padding-left:25px;" id="navbarToggler">
@@ -79,13 +73,13 @@
                         <a class="mob-nav nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item mob-menu">
-                        <a class="mob-nav nav-link active" href="about.html">About Us +</a>
+                        <a class="mob-nav nav-link active" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="mob-nav nav-link active" href="contact.html">Contact +</a>
+                        <a class="mob-nav nav-link active" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="mob-nav nav-link active" href="blog.html">Blog +</a>
+                        <a class="mob-nav nav-link active" href="blog.html">Blog</a>
                     </li>
                     </ul>
                 </div>
@@ -99,22 +93,22 @@
                 <div class="action-overlay-content justify-content-start" style="padding-left:25px;" id="navbarToggler">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item" style="margin-top: 10px;">
-                        <img style=" margin-top:15px;" src="assets/img/pen-icon.svg" alt="" width="24" height="24">
+                        <img style=" margin-top:15px;" src="assets/img/b-pen-icon.svg" alt="" width="24" height="24">
                         <p style="display: inline; padding-left:20px;">Have a project overview?</p>
                         <a style="margin-top: -10px;" class="action-mob-nav nav-link active" href="index.html">Submit a form</a>
                     </li>
                     <li class="nav-item mob-menu">
-                        <img style=" margin-top:13px;" src="assets/img/email-icon.svg" alt="" width="24" height="24">
+                        <img style=" margin-top:13px;" src="assets/img/b-email-icon.svg" alt="" width="24" height="24">
                         <p style="display: inline; padding-left:20px;">Share detailed specification</p>
                         <a style="margin-top: -10px;" class="action-mob-nav nav-link active" href="about.html">updot@gmail.com</a>
                     </li>
                     <li class="nav-item">
-                        <img style=" margin-top:12px;" src="assets/img/call-icon.svg" alt="" width="24" height="24">
+                        <img style=" margin-top:12px;" src="assets/img/b-call-icon.svg" alt="" width="24" height="24">
                         <p style="display: inline; padding-left:20px;">Begin a quick discussion?</p>
                         <a style="margin-top: -10px;" class="action-mob-nav nav-link active" href="contact.html">Chat with our executive</a>
                     </li>
                     <li class="nav-item">
-                        <img style=" margin-top:10px;" src="assets/img/chat-icon.svg" alt="" width="24" height="24">
+                        <img style=" margin-top:10px;" src="assets/img/b-msg-icon.svg" alt="" width="24" height="24">
                         <p style="display: inline; padding-left:20px;">Wanna join us</p>
                         <a style="margin-top: -10px;" class="action-mob-nav nav-link active" href="blog.html">Apply here</a>
                     </li>
@@ -127,16 +121,16 @@
             <div id="desk-display" class="collapse navbar-collapse d-x-flex justify-content-end">
                 <ul class="navbar-nav mt-2 mt-lg-0">
                     <li class="nav-item">
-                       <a id="desk1-display" class="nav-link active text-dark" href="index.html">Home</a>
+                       <a id="desk1-display" class="nav-link active" href="index.html">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a id="desk2-display" class="nav-link active text-dark" href="about.html">About Us</a>
+                        <a id="desk2-display" class="nav-link active" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a id="desk3-display" class="nav-link active text-dark" href="contact.html">Contact</a>
+                        <a id="desk3-display" class="nav-link active" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a id="desk4-display" class="nav-link active text-dark" href="blog.html">Blog</a>
+                        <a id="desk4-display" class="nav-link active"  href="blog.html">Blog</a>
                     </li>
                 </ul>
 
@@ -329,22 +323,22 @@
                                 <div class="col-lg-8">
                                     <ul class="footer-links">
                                         <li class="footer-item py-2">
-                                            <a class="footer-link" href="about.html">About Us</a>
+                                            <a id="fl-a" class="footer-link dark" href="about.html">About Us</a>
                                         </li>
                                         <li class="footer-item py-2">
-                                            <a class="footer-link" href="about.html">Careers</a>
+                                            <a id="fl-b" class="footer-link dark" href="about.html">Careers</a>
                                         </li>
                                         <li class="footer-item py-2">
-                                            <a class="footer-link" href="blog.html">Blog</a>
+                                            <a id="fl-c" class="footer-link dark" href="blog.html">Blog</a>
                                         </li>
                                         <li class="footer-item py-2">
-                                            <a class="footer-link" href="blog.html">Privacy Policy</a>
+                                            <a id="fl-d" class="footer-link dark" href="blog.html">Privacy Policy</a>
                                         </li>
                                         <li class="footer-item py-2">
-                                            <a class="footer-link" href="blog.html">Terms and Conditions</a>
+                                            <a id="fl-e" class="footer-link dark" href="blog.html">Terms and Conditions</a>
                                         </li>
                                         <li class="footer-item py-2">
-                                            <a class="footer-link" href="blog.html">Contact</a>
+                                            <a id="fl-f" class="footer-link dark" href="blog.html">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -383,37 +377,101 @@
             </footer>
         </section>
         <!--footer ends-->
+
+        <script>
+            $(document).ready(function(){
+                if(screen.width < 768) {
+                    $("#main-logo").attr("src", "assets/img/Favicon.png");
+                    $("#main-logo").attr("width", "65");
+                    $("#main-logo").attr("height", "50");
+                }
+            })
+        </script>
         
-        <!-- <script>
-            
+        <script>
             $(document).ready(function(){
             $(window).scroll(function(){
                 var scroll = $(window).scrollTop();
-                if (scroll > 300) {
-                    $("#mainNav").css("background" , "#37474F");
-                    document.getElementById('night-toggle').style.backgroundColor='white';
-                    $(".navbar-brand").css("color", "white");
+                console.log(scroll);
+                var dmode = document.querySelector('.dark-mode');
+                if (scroll > 300 && dmode == null) {
+                    console.log('scrolled not in dark');
+                    $("#mainNav").css("background" , "#37474F"); //after scrolling make bg to #37474F
+                    document.getElementById('night-toggle').style.backgroundColor='transparent';
+                    $("#main-logo").attr("src", "assets/img/New logo.png");
+                    // $(".navbar-brand").css("color", "white");
+
                     if (screen.width >= 992) {
+
+                        //scrolled and not in dark mode in desktop view
+                    $(".nav-link").css("color", "white"); 
+                    
+                    }
+                    if (screen.width < 768) {
+                         //scrolled and not in dark mode in mobile view;
+                         $("#main-logo").attr("src", "assets/img/Main Logo.png");
+                        // console.log(screen.width);
+                        $(".nav-link").css("color", "black");
+                        $("#mainNav").css("background" , "#37474F");
+                        // $(".navbar-toggler").css("backgroundColor", "white");
+                    }
+                }
+                else if (scroll < 300 && dmode ==null){
+                    console.log('not scroll in dark');
+                    $("#mainNav").css("backgroundColor" , "transparent");//before scrolling make bg transparent
+
+                    if(screen.width >= 992) {
+                        //didn't scroll and not in darkmode in desktop view
+
+                        document.getElementById('night-toggle').style.backgroundColor='transparent';
+                        $("#main-logo").attr("src", "assets/img/Footer Logo.png");
+                        // $(".navbar-brand").css("color", "black");  	
+                        $(".nav-link").css("color", "black");
+                    }
+
+                    if(screen.width < 768){
+                        $("#main-logo").attr("src", "assets/img/Favicon.png");
+                        //didn't' scroll and not in darkmode in mobile view
+                        // $(".navbar-brand").css("color", "black");  	
+                        $(".nav-link").css("color", "black");
+                    }
+                }
+                else if(scroll > 300 && dmode !=null) {
+                    //dark mode scrolled
+                    console.log('scrolled in dark');
+                    if(screen.width >= 992){
+                        //scrolled in darkmode in desktop view
+                        document.getElementById('night-toggle').style.backgroundColor='white';
+                    $("#mainNav").css("background" , "black");
                     $(".nav-link").css("color", "white");
                     
                     }
-                    if (screen.width < 992) {
-                        // console.log(screen.width);
-                    $(".nav-link").css("color", "black");
-                    // $(".navbar-toggler").css("backgroundColor", "white");
-                    }
-                }
-                else{
-                    document.getElementById('night-toggle').style.backgroundColor='transparent';
-                    $("#main-logo").attr("src", "assets/img/New logo.png");
-                    $("#mainNav").css("background" , "transparent");
+
+                    if(screen.width < 768){
+                        //scrolled in darkmode in mobile view
+                    // $("#main-logo").attr("src", "assets/img/New logo.png");
+                    $("#mainNav").css("background" , "white");
                     $(".navbar-brand").css("color", "black");  	
                     $(".nav-link").css("color", "black");
-                    
+                    }
+                }
+
+                else if(scroll < 300 && dmode!=null) {
+                    console.log('not scrolled in dark');
+                    //didn't scroll in darkmode 
+                    document.getElementById('night-toggle').style.backgroundColor='white';
+                    //before scrolling make bg black
+                    if(screen.width >=992) {
+                        $(".nav-link").css("color", "white");
+                        $("#mainNav").css("background" , "transparent");
+                    }
+                    if(screen.width < 768) {
+                        $("#mainNav").css("background", "white");
+                    }
                 }
             })
             })
-        </script> -->
+        </script>
 
     </body>
 </html>
