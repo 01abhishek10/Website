@@ -52,7 +52,7 @@
     <body>
 
         <!-- navigation start -->
-        <nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav id="mainNav" style="background:#37474F;" class="navbar navbar-expand-lg navbar-light fixed-top">
 
             <!-- hamburger on mobile view -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,7 @@
 
             <!-- main logo -->
             <a class="navbar-brand" href="#">
-                <img id="main-logo" src="assets/img/Favicon.png" width="65" height="40" alt="">
+                <img id="main-logo" src="assets/img/New logo.png" width="100" height="40" alt="">
               </a>
 
             <div id="myNav" class="overlay">
@@ -234,16 +234,62 @@
         <section class="news">
             <div class="container">
                 <div class="row">
-                    <h1 class="cd-hire mt-5">Subscribe to our newsletter</h1>
-                    <form action="#">
-                    <div class="col-lg-6 mt-3 mb-5">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <div class="col-lg-6">
+                        <h1 class="cd-hire mt-5">Subscribe to our newsletter</h1>
+                        <form action="#">
+                            <div class="col-lg-6 mt-3 mb-5">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="col-lg-6 mt-3 mb-5">
+                                <button id="contact-btn3" type="submit" class="btn btn-outline-dark rounded-pill">Subscribe Now!</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-lg-6 mt-3 mb-5">
-                        <button id="contact-btn3" type="submit" class="btn btn-outline-dark rounded-pill">Subscribe Now!</button>
+                    <div class="col-lg-6 mt-3">
+                        <div class="row">
+                            <div class="row pb-3">
+                                <div class="col-lg-6"><h2>Join With Us</h2></div>
+                                <div class="col-lg-6"><button id="contact-btn2" type="button"  class="btn btn-outline-dark rounded-pill" style="font-weight: 600;">APPLY NOW</button></div>
+                            </div>
+                            <div class="row explore-more pt-2">
+                                <div class="col-lg-8"><h2>Explore more</h2></div>
+                                <div class="col-lg-8">
+                                    <ul class="footer-links">
+                                        <li class="footer-item py-2">
+                                            <a id="fl-a" class="footer-link dark" href="about.html">About Us</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a id="fl-b" class="footer-link dark" href="about.html">Careers</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a id="fl-c" class="footer-link dark" href="blog.html">Blog</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a id="fl-d" class="footer-link dark" href="blog.html">Privacy Policy</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a id="fl-e" class="footer-link dark" href="blog.html">Terms and Conditions</a>
+                                        </li>
+                                        <li class="footer-item py-2">
+                                            <a id="fl-f" class="footer-link dark" href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row social-media">
+                                <h2>Follow us</h2>
+                                <div class="row py-3">
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#" ><i class="fab fa-facebook-f" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-instagram" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-whatsapp" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-github" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-behance" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a href="#"><i class="fab fa-linkedin-in" style="color: rgb(7,7,7);"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </form>
                 </div>
             </div>
         </section>
@@ -267,28 +313,35 @@
         <!--footer ends-->
 
         <!-- <script>
-            // $(document).ready(function(){
-            // $(window).scroll(function(){
-            //     var scroll = $(window).scrollTop();
-            //     if (scroll > 300) {
-            //         // $("#mainNav").css("background" , "#37474F");
-            //         // $(".navbar-brand").css("color", "white");
-            //         // if (screen.width >= 992) {
-            //         // $(".nav-link").css("color", "white");
-            //         // }
-            //         // if (screen.width < 992) {
-            //         // $(".nav-link").css("color", "black");
-            //         // }
-            //     }
-
-            //     else{
-            //         $("#mainNav").css("background" , "white");
-            //         $(".navbar-brand").css("color", "black");  	
-            //         $(".nav-link").css("color", "black");
-            //     }
-            // })
-            // })
-            AOS.init();
+            
+            $(document).ready(function(){
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                if (scroll > 300) {
+                    $("#mainNav").css("background" , "#37474F");
+                    document.getElementById('night-toggle').style.backgroundColor='white';
+                    $(".navbar-brand").css("color", "white");
+                    if (screen.width >= 992) {
+                    $(".nav-link").css("color", "white");
+                    
+                    }
+                    if (screen.width < 992) {
+                        // console.log(screen.width);
+                    $(".nav-link").css("color", "black");
+                    // $(".navbar-toggler").css("backgroundColor", "white");
+                    }
+                }
+                else{
+                    document.getElementById('night-toggle').style.backgroundColor='transparent';
+                    $("#main-logo").attr("src", "assets/img/New logo.png");
+                    $("#mainNav").css("background" , "transparent");
+                    $(".navbar-brand").css("color", "black");  	
+                    $(".nav-link").css("color", "black");
+                    
+                }
+            })
+            })
         </script> -->
+
     </body>
 </html>

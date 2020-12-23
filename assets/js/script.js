@@ -133,7 +133,7 @@ function myFunction(x) {
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
       console.log('scroll val'+scroll);
-      document.getElementById('main-logo').src='assets/img/Main Logo.png';
+      document.getElementById('main-logo').src='assets/img/New logo.png';
       if (scroll > 300) {
         $("#mainNav").css("background" , "black");
         $(".navbar-brand").css("color", "white");
@@ -157,14 +157,14 @@ function myFunction(x) {
     var teleicon = document.getElementById('tele-icon');
     teleicon.className = teleicon.className.replace(/\bbg-transparent\b/g, "bg-white");
         }
-        $("#main-logo").attr("src", "assets/img/Main Logo.png");
+        $("#main-logo").attr("src", "assets/img/New logo.png");
         $("#mainNav").css("background" , "transparent");	
         $(".nav-link").css("color", "white");
         
     }
     })
     console.log(x.classList);
-    document.getElementById('main-logo').src='assets/img/Main Logo.png';
+    document.getElementById('main-logo').src='assets/img/New logo.png';
     document.getElementById('full-head').style.animation='none';
     document.getElementById('react').src="assets/img/w-react.png";
     document.getElementById('angular').src="assets/img/w-angular.png";
