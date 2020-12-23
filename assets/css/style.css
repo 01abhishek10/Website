@@ -210,6 +210,9 @@ header.masthead .container{
     }
 }
 @media (max-width: 575.98px) { 
+    .contact .row.pb-3 h2{
+        margin-bottom: 15px;
+    }
     .homepage-next .col-lg-8 {
         text-align: center !important;
     }
@@ -223,7 +226,7 @@ header.masthead .container{
         letter-spacing: 1px;
     }
     .navbar-brand{
-        margin-right: 48% !important;
+        margin-right: 40% !important;
     }
     #full-head p.text-faded{
         text-align: left;
