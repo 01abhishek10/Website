@@ -210,7 +210,16 @@ header.masthead .container{
     }
 }
 @media (max-width: 575.98px) { 
-    .contact .row.pb-3 h2{
+    .blog .col-lg-4{
+        margin-bottom: 20px;
+    }
+    .intro .container{
+        margin-bottom: 0rem !important;
+    }
+    .intro .container .mt-5.pt-5{
+        margin-top:0rem !important;
+    }
+    .contact .row.pb-3 h2, .news .row.pb-3 h2{
         margin-bottom: 15px;
     }
     .homepage-next .col-lg-8 {

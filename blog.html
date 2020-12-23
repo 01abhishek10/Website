@@ -53,7 +53,7 @@
     <body>
 
         <!-- main navbar -->
-        <nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav id="mainNav" style="background:#37474F;" class="navbar navbar-expand-lg navbar-light fixed-top">
 
             <!-- hamburger on mobile view -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +62,7 @@
 
             <!-- main logo -->
             <a class="navbar-brand" href="#">
-                <img id="main-logo" src="assets/img/Favicon.png" width="65" height="40" alt="">
+                <img id="main-logo" src="assets/img/New logo.png" width="100" height="40" alt="">
               </a>
 
             <div id="myNav" class="overlay">
@@ -152,7 +152,7 @@
             </div>
             <!--telegram icon on mobile display-->
             <button class="btn d-md-none" type="button" style="background:transparent;">
-                <img src='assets/img/Icon.png' onclick="openSubNav()" alt="" width="35" height="30">
+                <img src='assets/img/chat icon.png' onclick="openSubNav()" alt="" width="30" height="30">
             </button>
         </nav>
         <!--blog-->
@@ -375,29 +375,36 @@
         <!--footer ends-->
 
 
-        <!-- <script>
+        <!--<script>
+            
             $(document).ready(function(){
             $(window).scroll(function(){
                 var scroll = $(window).scrollTop();
                 if (scroll > 300) {
-                    // $("#mainNav").css("background" , "#37474F");
-                    // $(".navbar-brand").css("color", "white");
-                    // if (screen.width >= 992) {
-                    // $(".nav-link").css("color", "white");
-                    // }
-                    // if (screen.width < 992) {
-                    // $(".nav-link").css("color", "black");
-                    // }
+                    $("#mainNav").css("background" , "#37474F");
+                    document.getElementById('night-toggle').style.backgroundColor='white';
+                    $(".navbar-brand").css("color", "white");
+                    if (screen.width >= 992) {
+                    $(".nav-link").css("color", "white");
+                    
+                    }
+                    if (screen.width < 992) {
+                        // console.log(screen.width);
+                    $(".nav-link").css("color", "black");
+                    // $(".navbar-toggler").css("backgroundColor", "white");
+                    }
                 }
-
                 else{
-                    $("#mainNav").css("background" , "white");
+                    document.getElementById('night-toggle').style.backgroundColor='transparent';
+                    $("#main-logo").attr("src", "assets/img/New logo.png");
+                    $("#mainNav").css("background" , "transparent");
                     $(".navbar-brand").css("color", "black");  	
                     $(".nav-link").css("color", "black");
+                    
                 }
             })
             })
-            AOS.init();
-        </script> -->
+        </script>-->
+
     </body>
 </html>
