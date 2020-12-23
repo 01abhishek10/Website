@@ -63,6 +63,14 @@ function aboutFunction(x){
   var ele = document.body;
   ele.classList.toggle('dark-mode');
   if (x.classList[2]!=null){
+        //mobile overlay background
+        var overlay = document.getElementById('myNav');
+        overlay.className = overlay.className.replace(/\boverlay\b/g, "dark-overlay");
+        //chaging overlay content
+        var overcontent = document.getElementById('navbarToggler');
+        overcontent.className = overcontent.className.replace(/\boverlay-content\b/g, "dark-overlay-content")
+        //sunicon bg to white
+        $("#night-toggle-mob").css('background', "white");
         //changing footer link colors
         $(".nav-link").css("color" , "white");
         var fla = document.getElementById('fl-a');
@@ -77,20 +85,23 @@ function aboutFunction(x){
         fle.className = fle.className.replace(/\bdark\b/g, "white");
         var flf = document.getElementById('fl-f');
         flf.className = flf.className.replace(/\bdark\b/g, "white");
-    $("#main-logo").attr("src", "assets/img/New logo.png");
-    // $("#mainNav").css("background" , "black");
-    // var navLink = document.getElementById('desk1-display');
-    // console.log(navLink.className)
-    // navLink.className = navLink.className.replace(/\btext-dark\b/g, "text-white");
-    // console.log(navLink.className)
-    // var navLink = document.getElementById('desk2-display');
-    // navLink.className = navLink.className.replace(/\btext-dark\b/g, "text-white");
-    // var navLink = document.getElementById('desk3-display');
-    // navLink.className = navLink.className.replace(/\btext-dark\b/g, "text-white");
-    // var navLink = document.getElementById('desk4-display');
-    // navLink.className = navLink.className.replace(/\btext-dark\b/g, "text-white");
-    // var mainNav = document.getElementById('mainNav');
-    // mainNav.className = mainNav.className.replace(/\bbg-light\b/g, "bg-dark");
+
+        //in desktop change the icon
+        if(screen.width >= 992)
+            document.getElementById('main-logo').src='assets/img/New logo.png';
+
+        $(window).scroll(function(){
+          var scroll = $(window).scrollTop();
+          console.log('scroll val'+scroll);
+          
+          if (scroll < 300 && screen.width >= 992) {
+            $("#mainNav").css("background", "black");
+          }
+        })
+        //change the background in mobile view 
+        if(screen.width < 768) {
+          $("#mainNav").css("background", "white");
+      }
     var element = document.getElementById('contact-btn');
     element.className = element.className.replace(/\bbtn-outline-dark\b/g, "btn-outline-light");
     var element = document.getElementById('contact-btn2');
@@ -98,9 +109,25 @@ function aboutFunction(x){
     var element = document.getElementById('contact-btn3');
     element.className = element.className.replace(/\bbtn-outline-dark\b/g, "btn-outline-light");
   }
-  else {
-    $("#main-logo").attr("src", "assets/img/Footer Logo.png");
-    $(".nav-link").css("color" , "black");
+  else if(x.classList[2] == null){
+    //desktop dark mode change
+    if(screen.width >=992) {
+      $("#mainNav").css("background" , "transparent");
+      document.getElementById('night-toggle').style.backgroundColor='transparent';
+              // $("#main-logo").attr("src", "assets/img/New logo.png");
+              // $(".navbar-brand").css("color", "black");  	
+              $(".nav-link").css("color", "black");
+              $("#main-logo").attr("src", "assets/img/Footer Logo.png");
+    }
+     //mobile menu darkmode change
+  var overlay = document.getElementById('myNav');
+  overlay.className = overlay.className.replace(/\bdark-overlay\b/g, "overlay");
+
+  //mobile menu background change
+  var overcontent = document.getElementById('navbarToggler');
+  overcontent.className = overcontent.className.replace(/\bdark-overlay-content\b/g, "overlay-content")
+
+ 
     //changing footer links
     var fla = document.getElementById('fl-a');
   fla.className = fla.className.replace(/\bwhite\b/g, "dark");
@@ -114,16 +141,53 @@ function aboutFunction(x){
   fle.className = fle.className.replace(/\bwhite\b/g, "dark");
   var flf = document.getElementById('fl-f');
   flf.className = flf.className.replace(/\bwhite\b/g, "dark");
-    // var navLink = document.getElementById('desk1-display');
-    // navLink.className = navLink.className.replace(/\btext-white\b/g, "text-dark");
-    // var navLink = document.getElementById('desk2-display');
-    // navLink.className = navLink.className.replace(/\btext-white\b/g, "text-dark");
-    // var navLink = document.getElementById('desk3-display');
-    // navLink.className = navLink.className.replace(/\btext-white\b/g, "text-dark");
-    // var navLink = document.getElementById('desk4-display');
-    // navLink.className = navLink.className.replace(/\btext-white\b/g, "text-dark");
-    // var mainNav = document.getElementById('mainNav');
-    // mainNav.className = mainNav.className.replace(/\bbg-dark\b/g, "bg-light");
+
+
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      console.log(scroll);
+      var dmode = document.querySelector('.dark-mode');
+      if (scroll > 300 && dmode == null) {
+          console.log('scrolled not in dark');
+          $("#mainNav").css("background" , "#37474F"); //after scrolling make bg to #37474F
+          document.getElementById('night-toggle').style.backgroundColor='transparent';
+          // $(".navbar-brand").css("color", "white");
+
+          if (screen.width >= 992) {
+
+              //scrolled and not in dark mode in desktop view
+          $(".nav-link").css("color", "white");
+          
+          }
+          if (screen.width < 992) {
+              //scrolled and not in dark mode in mobile view;
+
+              // console.log(screen.width);
+              $(".nav-link").css("color", "black");
+              // $(".navbar-toggler").css("backgroundColor", "white");
+          }
+      }
+      if (scroll < 300 && dmode ==null){
+          console.log('not scroll in dark');
+          $("#mainNav").css("background" , "transparent");//before scrolling make bg transparent
+
+          if(screen.width >= 992) {
+              //didn't scroll and not in darkmode in desktop view
+
+              document.getElementById('night-toggle').style.backgroundColor='transparent';
+              // $("#main-logo").attr("src", "assets/img/New logo.png");
+              // $(".navbar-brand").css("color", "black");  	
+              $(".nav-link").css("color", "black");
+          }
+
+          if(screen.width < 768){
+              //didn't' scroll and not in darkmode in mobile view
+              // $(".navbar-brand").css("color", "black");  	
+              $(".nav-link").css("color", "black");
+          }
+      }
+  })
+
     var element = document.getElementById('contact-btn');
     element.className = element.className.replace(/\bbtn-outline-light\b/g, "btn-outline-dark");
     var element = document.getElementById('contact-btn2');
@@ -163,9 +227,13 @@ function myFunction(x) {
     flf.className = flf.className.replace(/\bdark\b/g, "white");
     //changing mobile overlay icon background
     var mobhamicon = document.getElementById('ham-icon');
-    mobhamicon.className = mobhamicon.className.replace(/\bbg-transparent\b/g, "bg-white");
+    if (mobhamicon!=null){
+      mobhamicon.className = mobhamicon.className.replace(/\bbg-transparent\b/g, "bg-white");
+    }
     var teleicon = document.getElementById('tele-icon');
+    if (teleicon!= null) {
     teleicon.className = teleicon.className.replace(/\bbg-transparent\b/g, "bg-white");
+    }
 
     // document.getElementById('night-toggle').style.backgroundColor='white';
     $(window).scroll(function(){
@@ -231,12 +299,14 @@ function myFunction(x) {
     document.getElementById('mongodb').src="assets/img/w-mongodb.png";
     document.getElementById('oracle').src="assets/img/w-oracle.png";
     document.getElementById('firebase').src="assets/img/w-firebase.png";
-    var element = document.getElementById('contact-btn');
-    element.className = element.className.replace(/\bbtn-outline-dark\b/g, "btn-outline-light");
-    var element = document.getElementById('contact-btn2');
-    element.className = element.className.replace(/\bbtn-outline-dark\b/g, "btn-outline-light");
-    var element = document.getElementById('contact-btn3');
-    element.className = element.className.replace(/\bbtn-outline-dark\b/g, "btn-outline-light");
+    var element1 = document.getElementById('contact-btn');
+    console.log(element1);
+    element1.className = element1.className.replace(/\bbtn-outline-dark\b/g, "btn-outline-light");
+    console.log(element1);
+    var element2 = document.getElementById('contact-btn2');
+    element2.className = element2.className.replace(/\bbtn-outline-dark\b/g, "btn-outline-light");
+    var element3 = document.getElementById('contact-btn3');
+    element3.className = element3.className.replace(/\bbtn-outline-dark\b/g, "btn-outline-light");
     // to make text black in nightmode
     var hometab = document.getElementById('home-tab');
     hometab.className = hometab.className.replace(/\bnav-link text-center text-dark\b/g, "nav-link text-center text-white");
@@ -318,10 +388,11 @@ else if (x.classList[2] == null){
             })
 
 
-
     var mobhamicon = document.getElementById('ham-icon');
+    if (mobhamicon!=null)
     mobhamicon.className = mobhamicon.className.replace(/\bbg-white\b/g, "bg-transparent");
     var teleicon = document.getElementById('tele-icon');
+    if (teleicon!=null)
     teleicon.className = mobhamicon.className.replace(/\bbg-white\b/g, "bg-transparent");
     if (screen.width < 992){
     var temp = document.getElementById('myNav');
@@ -351,12 +422,12 @@ else if (x.classList[2] == null){
     document.getElementById('mongodb').src="assets/img/mongodb.png";
     document.getElementById('oracle').src="assets/img/oracle.png";
     document.getElementById('firebase').src="assets/img/firebase.png";
-    var element = document.getElementById('contact-btn');
-    element.className = element.className.replace(/\bbtn-outline-light\b/g, "btn-outline-dark");
-    var element = document.getElementById('contact-btn2');
-    element.className = element.className.replace(/\bbtn-outline-light\b/g, "btn-outline-dark");
-    var element = document.getElementById('contact-btn3');
-    element.className = element.className.replace(/\bbtn-outline-light\b/g, "btn-outline-dark");
+    var element1 = document.getElementById('contact-btn');
+    element1.className = element1.className.replace(/\bbtn-outline-light\b/g, "btn-outline-dark");
+    var element2 = document.getElementById('contact-btn2');
+    element2.className = element2.className.replace(/\bbtn-outline-light\b/g, "btn-outline-dark");
+    var element3 = document.getElementById('contact-btn3');
+    element3.className = element3.className.replace(/\bbtn-outline-light\b/g, "btn-outline-dark");
     // to make text dark in white mode
     var hometab = document.getElementById('home-tab');
     hometab.className = hometab.className.replace(/\bnav-link text-center text-white\b/g, "nav-link text-center text-dark");

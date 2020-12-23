@@ -47,7 +47,7 @@
     </head>
     <body>
         <!-- main navbar -->
-        <nav id="mainNav" style="background:#37474F;" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
 
             <!-- hamburger on mobile view -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,7 +64,7 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <!--nightmode toggle icon in mobile-->
                 <button id="night-toggle-mob" class="btn text-right text-white d-lg-none" type="button">
-                    <i onclick="myFunction(this)" class="fas fa-moon" style="text-align: center; color:black;"></i>
+                    <i onclick="aboutFunction(this)" class="fas fa-moon" style="text-align: center; color:black;"></i>
                 </button>
                 <!--overlay content start-->
                 <div class="overlay-content d-flex justify-content-start" style="padding-left:25px;" id="navbarToggler">
@@ -398,14 +398,13 @@
                     console.log('scrolled not in dark');
                     $("#mainNav").css("background" , "#37474F"); //after scrolling make bg to #37474F
                     document.getElementById('night-toggle').style.backgroundColor='transparent';
-                    $("#main-logo").attr("src", "assets/img/New logo.png");
+                    
                     // $(".navbar-brand").css("color", "white");
 
                     if (screen.width >= 992) {
-
+                        $("#main-logo").attr("src", "assets/img/New logo.png");
                         //scrolled and not in dark mode in desktop view
                     $(".nav-link").css("color", "white"); 
-                    
                     }
                     if (screen.width < 768) {
                          //scrolled and not in dark mode in mobile view;
@@ -433,6 +432,7 @@
                         $("#main-logo").attr("src", "assets/img/Favicon.png");
                         //didn't' scroll and not in darkmode in mobile view
                         // $(".navbar-brand").css("color", "black");  	
+                        $("#mainNav").css('background', 'transparent');
                         $(".nav-link").css("color", "black");
                     }
                 }
@@ -460,7 +460,7 @@
                     console.log('not scrolled in dark');
                     //didn't scroll in darkmode 
                     document.getElementById('night-toggle').style.backgroundColor='white';
-                    //before scrolling make bg black
+                    $("#mainNav").css("background" , "black");///before scrolling make bg black
                     if(screen.width >=992) {
                         $(".nav-link").css("color", "white");
                         $("#mainNav").css("background" , "transparent");
@@ -471,7 +471,7 @@
                 }
             })
             })
-        </script> -->
+        </script> 
 
     </body>
 </html>
