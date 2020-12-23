@@ -210,6 +210,9 @@ header.masthead .container{
     }
 }
 @media (max-width: 575.98px) { 
+    .blog .col-lg-4{
+        margin-bottom: 20px;
+    }
     .intro .container{
         margin-bottom: 0rem !important;
     }
