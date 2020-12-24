@@ -141,13 +141,24 @@
         <header id="full-head" class="masthead text-center text-white d-flex" style="width: 100%;">
             <div class="container my-auto mx-auto">
                 <div class="row">
-                    <div class="col-lg-10 mx-auto">
+                    <div class="d-lg-none col-lg-10 mx-auto">
                         <img class="d-lg-none" src="assets/img/Updot Phone PopUp-01.png" alt="" width="100%">
                         <h1 class="text-uppercase animate__animated animate__pulse ">Uplifting <div class="next">Your</div> Dreams</h1>
-                        <hr />
+                    </div>
+                    <div class="d-none d-lg-block col-lg-6 mx-auto">
+                        <img src="assets/img/Updot Laptop PopUp.png" alt="" width="100%">
+                    </div>
+                    <div class="d-none d-lg-block col-lg-6 mt-5 pt-5 mx-auto">
+                        <img class="d-lg-none" src="assets/img/Updot Phone PopUp-01.png" alt="" width="100%">
+                        <h1 class="text-uppercase animate__animated animate__pulse ">Uplifting <div class="next">Your</div> Dreams</h1>
+                        <p class="text-faded mb-5">Whatever your business is, we have you covered. With a dedicated team onboard, we never fall short on expectations. </p>
+                        <button class="btn btn-transparent border-dark rounded-pill mx-auto" type="button">
+                            <a class="btn btn-transparent text-white js-scroll-trigger" role="button" href="contact.html">Get a quote</a>
+                        </button>
+                        
                     </div>
                 </div>
-                <div class="col-lg-8 mx-auto">
+                <div class="d-lg-none col-lg-8 mx-auto">
                     <p class="text-faded mb-5">Whatever your business is, we have you covered. With a dedicated team onboard, we never fall short on expectations. </p>
                     <button class="btn btn-transparent border-dark rounded-pill mx-auto" type="button">
                         <a class="btn btn-transparent text-white js-scroll-trigger" role="button" href="#services">Get a quote</a>
@@ -313,7 +324,7 @@
                         <div class="box" style="background-image: linear-gradient(rgb(230, 221, 244) 0%, rgb(230, 221, 244) 100%);">
                             <h3 class="title">Chatbot Development</h3>
                             <div class="img-box"><img class="chatbot" src="assets/img/chatbot-1.svg" style="width:299px; height:212px;"></div>
-                            <p class="services-content">Need an additional route for leads and acquisition? Why not invest in a customized chatbot for your business.</p>
+                            <p class="services-content">Need an additional route for leads and acquisition? Why<br> not invest in a customized<br> chatbot for your business.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 px-4">
@@ -487,7 +498,7 @@
             $(document).ready(function(){
                 if(screen.width < 768) {
                     $("#main-logo").attr("src", "assets/img/wLogo.png");
-                    $("#main-logo").attr("width", "70");
+                    $("#main-logo").attr("width", "80");
                     $("#main-logo").attr("height", "25");
                 }
             })
