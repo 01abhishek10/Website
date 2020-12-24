@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Updot</title>
@@ -44,11 +45,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="assets/js/script.js"></script>
-    </head>
 
+    </head>
     <body>
 
-        <!-- navigation start -->
+        <!-- main navbar -->
         <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
 
             <!-- hamburger on mobile view -->
@@ -65,7 +66,7 @@
                 <!--button to close navigation overlay-->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <!--nightmode toggle icon in mobile-->
-                <button id="night-toggle-mob" class="btn text-right text-white d-lg-none" type="button">
+                <button id="night-toggle-mob" class="btn text-right text-white d-lg-none" type="button" onclick="retflag()">
                     <i onclick="aboutFunction(this)" class="fas fa-moon" style="text-align: center; color:black;"></i>
                 </button>
                 <!--overlay content start-->
@@ -118,7 +119,6 @@
                 </div>
             </div>
             <!-- action mobile ends -->
-            
 
             <!--normal navbar for desktop-->
             <div id="desk-display" class="collapse navbar-collapse d-x-flex justify-content-end">
@@ -152,31 +152,98 @@
                 <img src='assets/img/chat icon.png' onclick="openSubNav()" alt="" width="30" height="30">
             </button>
         </nav>
-        
+        <!--blog-->
 
         <!--small intro start-->
-        <section class="intro">
-            <div class="container my-5">
+        <section class="about-us intro">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <h1 class="text-left pt-5 mb-3 big-hire">Contact Us</h1>
-                        <span class="strong"><strong>Let's create something awesome together</strong></span>
-                    </div>
-                    <div class="col-lg-6 mt-5 pt-5">
-                        <p class="mt-5">Contact us today if you have questions about UpDot.
-                            Our customer care executive will respond as soon as possible with answers to your
-                            questions.</p>
+                        <h1 class="text-left pt-5 mb-3 big-hire" style="margin-top:5rem;">Terms & Conditions</h1>
+                        <span class="strong"><strong>Read about our terms and conditions</strong></span>
+                    <div class="col-lg-12">
+                        <ul>
+                            <li>
+                                <p class="mt-5">Project initiation will be strictly based on confirmation of initial payment. Date of initiation of the project will be intimated to the client once the proposal gets accepted and payment is made.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">There are no refunds for any fees paid and the client stays responsible to pay the total amount of fees due for any project.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">Updot reserves the right to suspend or terminate the project if the customer fails to uphold the payment terms even after satisfactory submission of committed deliverables as per plan.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">Our team reserves rights to sole ownership to all work done by Updot, including documents, designs, ideas or any work product, produced by Updot Solutions, and may choose to proceed with what is deemed fit if the Client fails to settle all outstanding issues and dues.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">Updot also withholds the right to suspend or terminate the project if the customer at any point of time misbehaves with our staff or personnel in any given matter.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">In the event of violation of agreement, Updot reserves the rights to take legal actions according to applicable laws.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">We will not be held responsible for any liability or losses the client may incur after the termination of the project.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">The project cost mentioned in the client quote does not include any travel and related expenses, to the customer’s offices overseas, or outside the city where Updot is located. Any such costs will be invoiced to the customer separately.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">Requirements as mentioned by the client will be concerned as the final scope before commencement of the project.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">Any change in requirements during the development phase will be considered as a separate change request, and the estimated cost for the change will be shared with the client for approval.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">All charges mentioned for our services are exclusive of tax. </p>
+                            </li>
+                            <li>
+                                <p class="mt-5">Days mentioned in the quote are in official business days, exclusive of public holidays as per Holiday calendar.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">Updot Solutions will not be held responsible for any delays that arise due to lack of communication and support from the client side.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">The client should provide the required content/image (if required) once the project has begun.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">If the source code or design is modified by the Client without mutual written consent, Updot Solutions will not be held responsible for any errors or complaints.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">Any kind of bug fixing after project delivery will be done after communicating with the concerned team. However, past one month of final delivery date, Monthly maintenance charge will be levied for continuation of support.</p>
+                            </li>
+                            <li>
+                                <p class="mt-5">Updot will not be held liable for any issues related to the hosting provider. We may provide hosting advice but in events that the advice is not taken upon, the sole responsibility of any loss or maintenance related issues will be that of the clients.</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
         <!--small intro end-->
 
+        <!--newsletter subscription start-->
+        <section class="news">
+            <div class="container">
+                <div class="row">
+                    <h1 class="cd-hire mt-5">Subscribe to our newsletter</h1>
+                    <form action="#">
+                    <div class="col-lg-6 mt-3 mb-5">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="col-lg-6 mt-3 mb-5">
+                        <button id="contact-btn3" type="submit" class="btn btn-outline-dark rounded-pill">Subscribe Now!</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </section>
+        <!--newsletter subscription ends-->
+
         <!--contact form-->
         <section class="contact">
             <div class="container pt-5">
                 <div class="row px-3">
-                    <div class="col-lg-6" data-aos="fade-down">
+                    <div class="col-lg-6">
                         <h2>Talk with Us</h2>
                         <p class="pt-3">Discuss your plans with us</p>
                         <form action="#" class="row">
@@ -186,6 +253,12 @@
                                 Looks good!
                               </div>
                             </div>
+                            <div class="col-lg-10 pt-3 px-3 ">
+                                <input type="email" class="form-control" id="validationServer01" required placeholder="Email">
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                              </div>
                             <div class="col-lg-10 pt-3 px-3">
                                 <div class="row">
                                     <div class="col-4">
@@ -205,45 +278,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-10 pt-3 px-3 ">
-                                <input type="email" class="form-control" id="validationServer01" required placeholder="Email">
-                                <div class="valid-feedback">
-                                Looks good!
-                                </div>
-                            </div>
                             <div class="col-lg-10 pt-3 px-3 mb-3">
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
                             </div>
-                            
                             <div class="col-lg-4 py-3">
                               <button id="contact-btn" class="btn btn-outline-dark rounded-pill " type="submit" style="font-weight: 600;">SUBMIT</button>
                             </div>
                           </form>
                     </div>
-                    <div class="col-lg-6 pt-3" data-aos="fade-down">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15544.307743477919!2d77.5223957!3d13.0943105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3c9f54632c777fb1!2sUpdot!5e0!3m2!1sen!2sin!4v1608685749043!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--newsletter subscription start-->
-        <section class="news">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h1 class="cd-hire mt-5">Subscribe to our newsletter</h1>
-                        <form action="#">
-                            <div class="col-lg-6 mt-3 mb-5">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                            </div>
-                            <div class="col-lg-6 mt-3 mb-5">
-                                <button id="contact-btn3" type="submit" class="btn btn-outline-dark rounded-pill">Subscribe Now!</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-6 mt-3 footer-news">
+                    <div class="col-lg-6 pt-3">
                         <div class="row">
                             <div class="row pb-3">
                                 <div class="col-lg-6"><h2>Join With Us</h2></div>
@@ -277,10 +320,10 @@
                             <div class="row social-media">
                                 <h2>Follow us</h2>
                                 <div class="row py-3">
-                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a target="_blank" href="https://www.facebook.com/updot.in"><i class="fab fa-facebook-f" style="color: rgb(7,7,7);"></i></a></div>
-                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a target="_blank" href="https://www.instagram.com/updot.in"><i class="fab fa-instagram" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a target="_blank" href="https://www.facebook.com/updot.in/"><i class="fab fa-facebook-f" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a target="_blank" href="https://www.instagram.com/updot.in/"><i class="fab fa-instagram" style="color: rgb(7,7,7);"></i></a></div>
                                    <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a target="_blank" href="https://api.whatsapp.com/send?phone=918549827162"><i class="fab fa-whatsapp" style="color: rgb(7,7,7);"></i></a></div>
-                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a target="_blank" href="https://www.github.com/Updot"><i class="fab fa-github" style="color: rgb(7,7,7);"></i></a></div>
+                                   <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a target="_blank" href="https://github.com/Updot"><i class="fab fa-github" style="color: rgb(7,7,7);"></i></a></div>
                                    <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a target="_blank" href="https://www.behance.net/updot"><i class="fab fa-behance" style="color: rgb(7,7,7);"></i></a></div>
                                    <div class="col p-3 shadow p-3 mb-5 bg-white rounded" style="text-align: center;"><a target="_blank" href="https://www.linkedin.com/company/updot/"><i class="fab fa-linkedin-in" style="color: rgb(7,7,7);"></i></a></div>
                                 </div>
@@ -290,7 +333,7 @@
                 </div>
             </div>
         </section>
-        <!--newsletter subscription ends-->
+        <!--contact form ends-->
 
         <!--footer starts-->
         <section id="footer">
@@ -298,7 +341,7 @@
                 <div class="container">
                     <div class="row">
                                 <p class="cp-text text-center">
-                                © Copyright 2020 UpDot. 
+                                © Copyright 2020 UpDot.
                             </p>
                             <p class="cp-text text-center">
                                 All rights reserved. 
@@ -308,7 +351,6 @@
             </footer>
         </section>
         <!--footer ends-->
-
         <script>
             $(document).ready(function(){
                 if(screen.width < 768) {
@@ -318,6 +360,8 @@
                 }
             })
         </script>
+
+
         <script>
             
             $(document).ready(function(){
@@ -329,7 +373,7 @@
                     console.log('scrolled not in dark');
                     $("#mainNav").css("background" , "#37474F"); //after scrolling make bg to #37474F
                     document.getElementById('night-toggle').style.backgroundColor='transparent';
-                   
+                    
                     // $(".navbar-brand").css("color", "white");
 
                     if (screen.width >= 992) {
@@ -339,8 +383,8 @@
                     
                     }
                     if (screen.width < 768) {
-                        //scrolled and not in dark mode in mobile view;
-                        $("#main-logo").attr("src", "assets/img/wLogo.png");
+                         //scrolled and not in dark mode in mobile view;
+                         $("#main-logo").attr("src", "assets/img/wLogo.png");
                         // console.log(screen.width);
                         $(".nav-link").css("color", "black");
                         $("#mainNav").css("background", "#37474F");
@@ -348,7 +392,7 @@
                     }
                 }
                 else if (scroll < 300 && dmode ==null){
-                    console.log('not scroll not dark');
+                    console.log('not scroll in dark');
                     $("#mainNav").css("backgroundColor" , "transparent");//before scrolling make bg transparent
 
                     if(screen.width >= 992) {
@@ -364,7 +408,6 @@
                         $("#main-logo").attr("src", "assets/img/blogo.png");
                         //didn't' scroll and not in darkmode in mobile view
                         // $(".navbar-brand").css("color", "black");  	
-                        $("#mainNav").css('background', 'transparent');
                         $(".nav-link").css("color", "black");
                     }
                 }
@@ -394,8 +437,8 @@
                     document.getElementById('night-toggle').style.backgroundColor='white';
                     $("#mainNav").css("background" , "black");//before scrolling make bg black
                     if(screen.width >=992) {
-                        $("#mainNav").css("background" , "transparent");
                         $(".nav-link").css("color", "white");
+                        $("#mainNav").css("background" , "transparent");
                     }
                     if(screen.width < 768) {
                         $("#mainNav").css("background", "white");
@@ -403,7 +446,7 @@
                 }
             })
             })
-        </script> 
+        </script>
 
     </body>
 </html>

@@ -174,6 +174,15 @@ header.masthead .container{
     padding-top: 30px;
 }
 @media screen and (min-width:1200px) {
+    a:hover {
+        color:black !important;
+    }
+    p.mt-5 a{
+        font-size: 20px !important;
+    }
+    #homecontact {
+        margin-right:10px;
+    }
     section.contact form button{
         margin-top:15px;
     }
@@ -210,6 +219,9 @@ header.masthead .container{
     }
 }
 @media (max-width: 575.98px) { 
+    .blog .container > .row {
+        margin-top:20px;
+    }
     header.masthead .container {
         padding-top: 0px !important;
     }
@@ -241,14 +253,14 @@ header.masthead .container{
         letter-spacing: 1px;
     }
     .navbar-brand{
-        margin-right: 52% !important;
+        margin-right: 50% !important;
     }
     #full-head p.text-faded{
         text-align: left;
         padding-left:30px;
     }
     #full-head button{
-        margin-right: 45% !important;
+        margin-right: 50% !important;
     }
     #full-head .next{
         padding-top:10px;
